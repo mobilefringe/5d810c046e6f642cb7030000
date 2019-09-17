@@ -203,27 +203,27 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 social_media: [
                     {
                         name: "Facebook",
-                        url: "https://www.facebook.com/southlandmallmiami",
+                        url: "https://www.facebook.com/northgateshopping",
                         iconClass: "fa fa-facebook-square facebook"
                     },
                     {
                         name: "Twitter",
-                        url: "https://twitter.com/solandmall",
+                        url: "https://twitter.com/shopnorthgate",
                         iconClass: "fa fa-twitter twitter"
                     },
-                    {
-                        name: "YouTube",
-                        url: "https://www.youtube.com/user/southlandmallmiami",
-                        iconClass: "fa fa-youtube youtube"
-                    },
-                    {
-                        name: "Google+",
-                        url: "https://plus.google.com/+Mysouthlandmall",
-                        iconClass: "fa fa-google-plus google"
-                    },
+                    // {
+                    //     name: "YouTube",
+                    //     url: "https://www.youtube.com/user/southlandmallmiami",
+                    //     iconClass: "fa fa-youtube youtube"
+                    // },
+                    // {
+                    //     name: "Google+",
+                    //     url: "https://plus.google.com/+Mysouthlandmall",
+                    //     iconClass: "fa fa-google-plus google"
+                    // },
                     {
                         name: "Instagram",
-                        url: "https://www.instagram.com/solandmall/",
+                        url: "https://www.instagram.com/northgate_shopping_centre/",
                         iconClass: "fa fa-instagram instagram"
                     }
                     
