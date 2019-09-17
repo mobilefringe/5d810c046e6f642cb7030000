@@ -60,15 +60,34 @@
                         				</div>
                         			</div>
                         	    </div>
-                        	    <div v-else class="feature_item_container">
+                        	    <div v-else-if="!feature.isSocial" class="feature_item_container">
                         	        <a :href="feature.url">
                             			<img :src="feature.image_url" :alt="feature.name">
-                            			<div v-if="" class="feature_item_info">
-                            			    
-                            			    
+                            			
+                            			<div class="feature_item_info">
+                            			
                             			</div>
                             			
                             		</a>
+                        	    </div>
+                        	    <div v-else class="feature_item_container">
+                        	        
+                            			<img :src="feature.image_url" :alt="feature.name">
+                            			<div class="feature_item_info">
+                            			    <h3>Follow Us</h3>
+                            			    <div class="social_icons">
+                                                <span v-for="item in social_media">
+                                                    <a :href="item.url" target="_blank">
+                                                        <p class="accessibility">{{ item.name }}</p>
+                                                        <i :class="item.iconClass" aria-hidden="true"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                            			    
+                            			</div>
+                            			
+                            			
+                            	
                         	    </div>
                             </div>
                         </div>
