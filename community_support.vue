@@ -83,6 +83,9 @@
             template: template, // the variable template will be injected,
             data: function() {
                 return {
+                    dataLoaded: false, 
+                    
+                    
                     pageBanner : null,
                     currentPage: null,
                     subPages: {},
