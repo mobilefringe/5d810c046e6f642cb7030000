@@ -22,7 +22,14 @@
         "jobs" : "Careers",
         "privacy" : "Privacy Policy",
         "terms" : "Terms & Conditions",
-        "guest_services" : "Guest Services"
+        "guest_services" : "Guest Services",
+        "events_photos" : "Event Photos",
+        "accessibility" : "Accessibility",
+        "community_support" : "Community Support",
+        "centre-information" : "Centre Information",
+        "about_us" : "About Us",
+        "contact_us" : "Contact Us"
+        
     },
     "footer": {
         "newsletter" : "Newsletter",
