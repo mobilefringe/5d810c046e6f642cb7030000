@@ -65,7 +65,7 @@
 			    <div class="col-md-2 hidden_phone"></div>
 				<div class="col-sm-12 col-md-8">
 					<nav id="primary_nav" class="hidden_phone">
-						<ul class="menu">
+						<ul class="primary_nav_ul">
 						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
 						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{$t(item.name)}}</router-link>
 						        <span v-if="item.sub_menu != undefined">{{$t(item.name)}}</span>
