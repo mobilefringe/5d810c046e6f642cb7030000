@@ -135,5 +135,246 @@
 </template>
 
 <script>
-var _extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var o=arguments[t];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e};define(["Vue","vuex","moment","moment-timezone","vue_router","routes","bootstrap-vue","google-translate"],function(e,t,o,n,s,r,i){return e.use(i),e.component("header-component",{template:template,props:["menu_items","social_media"],data:function(){return{scrolled:!1,navUp:!1,search_result:null,suggestionAttribute:"name",keys:["name","description","tags","store.name"],headerReady:!1,showMenu:!1,showMobileMenu:!1,noScroll:!1,windowWidth:0,mobileScroll:!1,lastScrollTop:0,navUp:!1,m:!1}},beforeRouteUpdate:function(e,t,o){document.body.classList.remove("nav-up"),this.navUp=!1,o()},watch:{$route:function(){document.body.classList.remove("nav-up"),this.navUp=!1,this.windowWidth<=768&&(this.showMenu=!1),_.forEach(this.menu_items,function(e){e.show_sub_menu=!1})},showMenu:function(){1==this.showMenu?(document.body.classList.add("no_scroll"),document.body.classList.remove("nav-up"),this.navUp=!1):0==this.showMenu&&document.body.classList.remove("no_scroll")}},created:function(){var e=this;this.loadData().then(function(){e.headerReady=!0}),this.$nextTick(function(){window.addEventListener("resize",this.getWindowWidth),this.getWindowWidth()})},mounted:function(){var e=this;this.$nextTick(function(){e.googleTranslateInit()})},computed:_extends({},t.mapGetters(["property","timezone","getPropertyHours","getPropertyHolidayHours","getTodayHours","processedStores","processedEvents","processedPromos","processedJobs"]),{locale:{get:function(){return this.$store.state.locale},set:function(e){this.$store.commit("SET_LOCALE",{lang:e})}},todaysHours:function(){return this.getTodayHours},searchList:function(){var e=this,t=this.processedEvents,n=[];_.forEach(t,function(t){var s=o.tz(e.timezone).format(),r=o.tz(t.show_on_web_date,e.timezone).format();s>=r&&(t.is_store=_.includes(t.eventable_type,"Property")?!1:!0,n.push(t))}),t=n;var s=this.processedPromos,r=[];_.forEach(s,function(t){var n=o.tz(e.timezone).format(),s=o.tz(t.show_on_web_date,e.timezone).format();n>=s&&(t.is_store=_.includes(t.promotionable_type,"Property")?!1:!0,r.push(t))}),s=r;var i=this.processedJobs;_.forEach(i,function(e){e.is_store=_.includes(e.jobable_type,"Property")?!1:!0});var a=this.processedStores;_.forEach(a,function(e){e.is_store=!0});var l=_.union(a,t,s,i);return l}}),methods:{googleTranslateInit:function(){var e=this,t=setInterval(function(){null!=google.translate.TranslateElement&&(clearInterval(t),e.googleTranslateElement("google_translate_element"))},100)},googleTranslateElement:function(e){new google.translate.TranslateElement({pageLanguage:"en",includedLanguages:"en,es",layout:google.translate.TranslateElement.InlineLayout.SIMPLE,gaTrack:!0,gaId:"UA-115200481-13"},e);var t=this;setTimeout(function(){t.windowWidth<768&&(t.m=!0,$("#g_translater").detach().appendTo("#google_translate_element_m"))},1500)},loadData:function(){var e;return regeneratorRuntime.async(function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,regeneratorRuntime.awrap(Promise.all([this.$store.dispatch("getData","stores"),this.$store.dispatch("getData","events"),this.$store.dispatch("getData","promotions"),this.$store.dispatch("getData","jobs")]));case 3:e=t.sent,t.next=9;break;case 6:t.prev=6,t.t0=t["catch"](0),console.log("Error loading data: "+t.t0.message);case 9:case"end":return t.stop()}},null,this,[[0,6]])},changeLocale:function(e){this.locale=e},getWindowWidth:function(){this.windowWidth=window.innerWidth,this.windowWidth<768&&0==this.m?(m=!0,$("#g_translater").detach().appendTo("#google_translate_element_m")):this.windowWidth>=768&&1==this.m&&(m=!1,$("#g_translater").detach().prependTo("#desktopHeader"))},onOptionSelect:function(e){this.$router.push({name:"search-results",query:{searchQuery:this.search_result},params:{results:e}}),this.$nextTick(function(){this.search_result=""})},handleScroll:function(){this.scrolled=window.pageYOffset>100},mobileDidScrolled:function(){if(!this.showMenu){this.mobileScroll=window.pageYOffset>0;var e=this;e.mobileScroll&&(e.mobileHasScrolled(),e.mobileScroll=!1)}},mobileHasScrolled:function(){var e=document.getElementById("header").offsetHeight,t=$(window).scrollTop();t>this.lastScrollTop&&t>e?this.navUp=!0:t+$(window).height()<$(document).height()&&(this.navUp=!1),this.lastScrollTop=t}},beforeMount:function(){window.addEventListener("resize",this.getWindowWidth),window.addEventListener("scroll",this.handleScroll),window.addEventListener("scroll",this.mobileDidScrolled)},beforeDestroy:function(){window.addEventListener("resize",this.getWindowWidth),window.removeEventListener("scroll",this.handleScroll),window.removeEventListener("scroll",this.mobileDidScrolled)}})});
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue_router", "routes", "bootstrap-vue", "google-translate"], function (Vue, Vuex, moment, tz, VueRouter, appRoutes, BootstrapVue, googleTranslate) {
+        Vue.use(BootstrapVue);
+        return Vue.component("header-component", {
+            template: template, // the variable template will be injected,
+            props:['menu_items', 'social_media'],
+            data: function () {
+                return {
+                    scrolled: false,
+                    navUp: false,
+                    search_result: null,
+                    suggestionAttribute: "name",
+                    keys: ["name", "description", "tags", "store.name"],
+                    headerReady: false,
+                    showMenu: false,
+                    showMobileMenu: false,
+                    noScroll: false,
+                    windowWidth: 0,
+				    mobileScroll: false,
+				    lastScrollTop: 0,
+				    navUp: false,
+				    m : false
+                }
+            },
+            beforeRouteUpdate(to, from, next) {
+                document.body.classList.remove("nav-up");
+                this.navUp = false;
+                next();
+            },
+            watch: {
+                $route: function(to, from) {
+                    document.body.classList.remove("nav-up");
+                    this.navUp = false;
+
+                    if (this.windowWidth <= 768) {
+                        this.showMenu = false;
+                    }  
+                    _.forEach(this.menu_items, function(value, key) {
+                        value.show_sub_menu = false;
+                    });
+                },
+                showMenu: function() {
+                    if(this.showMenu == true){
+                        document.body.classList.add("no_scroll");
+                        document.body.classList.remove("nav-up");
+                        this.navUp = false;
+                    } else if (this.showMenu == false) {
+                        document.body.classList.remove("no_scroll");
+                    }
+                }
+            },
+            created() {
+                this.loadData().then(response => {
+                    this.headerReady = true;
+                });
+                this.$nextTick(function() {
+                    window.addEventListener('resize', this.getWindowWidth);
+                    this.getWindowWidth();
+                });
+            },
+            mounted()
+            {
+                this.$nextTick(() => {
+                    this.googleTranslateInit();
+                });
+        
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'getPropertyHours',
+                    'getPropertyHolidayHours',
+                    'getTodayHours',
+                    'processedStores',
+                    'processedEvents',
+                    'processedPromos',
+                    'processedJobs'
+                ]),
+                locale: {
+                    get () {
+                        return this.$store.state.locale
+                    },
+                    set (value) {
+                        this.$store.commit('SET_LOCALE', { lang: value })
+                    }
+                },
+                todaysHours() {
+                    return this.getTodayHours;
+                },
+                searchList() {
+                    var _this = this;
+                    
+                    var events = this.processedEvents;
+                    var temp_events = [];
+                    _.forEach(events, function (value, key) {
+                        var today = moment.tz(_this.timezone).format();
+                        var showOnWebDate = moment.tz(value.show_on_web_date, _this.timezone).format();
+                        if (today >= showOnWebDate) {
+                            if (_.includes(value.eventable_type, 'Property')) {
+                                value.is_store = false;
+                            } else {
+                                value.is_store = true;    
+                            }
+                            temp_events.push(value);
+                        }
+                    });
+                    events = temp_events;
+                    
+                    var promos = this.processedPromos;
+                    var temp_promos = [];
+                    _.forEach(promos, function (value, key) {
+                        var today = moment.tz(_this.timezone).format();
+                        var showOnWebDate = moment.tz(value.show_on_web_date, _this.timezone).format();
+                        if (today >= showOnWebDate) {
+                            if (_.includes(value.promotionable_type, 'Property')) {
+                                value.is_store = false;
+                            } else {
+                                value.is_store = true;    
+                            }
+                            
+                            temp_promos.push(value)
+                        }
+                    });
+                    promos = temp_promos;
+
+                    var jobs = this.processedJobs;
+                    _.forEach(jobs, function (value, key) {
+                        if (_.includes(value.jobable_type, 'Property')) {
+                            value.is_store = false;
+                        } else {
+                            value.is_store = true;    
+                        }
+                    });
+
+                    var stores = this.processedStores;
+                    _.forEach(stores, function (value, key) {
+                        value.is_store = true;    
+                    });
+
+                    var list = _.union( stores, events, promos, jobs );
+                    return list
+                },
+            },
+            methods: {
+                googleTranslateInit: function() {
+                    let checkIfGoogleLoaded = setInterval(() => {
+                        if (google.translate.TranslateElement != null) {
+                            clearInterval(checkIfGoogleLoaded);
+                            this.googleTranslateElement('google_translate_element');
+                        }
+                    }, 100);
+                },
+                googleTranslateElement: function(id) {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-115200481-13'}, id);
+                    var vm = this;
+                    setTimeout(function(){
+                        if (vm.windowWidth < 768){
+                            vm.m = true;
+                            $('#g_translater').detach().appendTo('#google_translate_element_m');                            
+                        }
+                    }, 1500);
+                    
+                },
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "stores"), this.$store.dispatch("getData", "events"),this.$store.dispatch("getData", "promotions"),this.$store.dispatch("getData", "jobs")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);    
+                    }
+                },
+                changeLocale: function(val) {
+                    // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+                    this.locale = val; 
+                },
+                getWindowWidth(event) {
+                    this.windowWidth = window.innerWidth;
+                    if (this.windowWidth < 768 && this.m == false){
+                        m = true;
+                        $('#g_translater').detach().appendTo('#google_translate_element_m');                            
+                    } else if (this.windowWidth >= 768 && this.m == true){
+                        m = false;
+                        $('#g_translater').detach().prependTo('#desktopHeader');                            
+                    }
+                },
+                onOptionSelect(option) {
+                    this.$router.push({
+                        name: "search-results",
+                        query: { searchQuery: this.search_result },
+                        params: { results: option }
+                    });
+                    this.$nextTick(function() {
+                        this.search_result = "";
+                    });
+                },
+                handleScroll () {
+				    this.scrolled = window.pageYOffset > 100;
+			    },
+        		mobileDidScrolled () {
+        		    if (!this.showMenu) {
+    				    this.mobileScroll = window.pageYOffset > 0;
+        				var _this = this;
+        				// setTimeout(function() {
+        					if (_this.mobileScroll) {
+        						_this.mobileHasScrolled();
+        						_this.mobileScroll = false;
+        					}
+        				// }, 150);
+        		    }
+        		},
+    			mobileHasScrolled () {
+    				// var lastScrollTop = 0;
+    				var delta = 5;
+    				var navbarHeight = document.getElementById("header").offsetHeight;
+    				var st = $(window).scrollTop();
+    
+    				// If they scrolled down and are past the navbar, add class .nav-up.
+    				// This is necessary so you never see what is "behind" the navbar.
+    				if (st > this.lastScrollTop && st > navbarHeight){
+    					// Scroll Down
+    					this.navUp = true;
+    				} else {
+    					// Scroll Up
+    					if(st + $(window).height() < $(document).height()) {
+    						this.navUp = false;
+    					}
+    				}
+    				
+    				this.lastScrollTop = st;
+    			},
+		    },
+    		beforeMount () {
+    			window.addEventListener('resize', this.getWindowWidth);
+    			window.addEventListener('scroll', this.handleScroll);
+    			window.addEventListener('scroll', this.mobileDidScrolled);
+    		},
+    		beforeDestroy () {
+    			window.addEventListener('resize', this.getWindowWidth);
+    			window.removeEventListener('scroll', this.handleScroll);
+    			window.removeEventListener('scroll', this.mobileDidScrolled);
+    		}
+        });
+    });
 </script>
