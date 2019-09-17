@@ -1,62 +1,51 @@
 <template>
-    <div v-if="currentPage"  v-cloak>
-    <loader v-if="!dataLoaded"></loader>
-    <transition name="fade">
+    <div> <!-- without an outer container div this component template will not render -->
+        <loader v-if="!dataLoaded"></loader>
+        <transition name="fade">
+            <div v-if="dataLoaded" v-cloak>
 
-    		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-    			<div class="site_container">
-    				<div class="header_content caps">
-    					<h1>{{ $t("events_page.events_header") }}</h1>
-    				</div>
-    			</div>
-    		</div>
-
-
-
-        <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-			<div class="site_container">
-				<div class="header_content">
-					<h1 v-if="locale=='en-ca'">{{currentPage.title}}</h1>
-					<h1 v-else>{{currentPage.title_2}}</h1>
-					<h2 style="display:none;">Scroll to  view page details</h2>
-					<h3 style="display:none;">View page details</h3>
-				</div>
-			</div>
-		</div>
+        		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        					<h1>{{ $t("events_page.events_header") }}</h1>
+        				</div>
+        			</div>
+        		</div>
 		
 		
 		
 		
-		<div class="site_container inside_page_content page_content">
-			<div class="row">
-			    <div class="col-md-12">
-                    <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
-                    <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
-			    </div>
-			</div>
-			<div class="row padding_tb_50" v-if="subPages.length > 0">
-                <div class="col-md-12">
-                    <b-card v-for="(item, index) in subPages" :key="index" no-body class="mb-1">
-                        <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-button block @click="item.show_tab = !item.show_tab; toggleOpen=!toggleOpen;" :class="item.show_tab ? 'collapsed' : null" :aria-controls="'tab-' + index" :aria-expanded="item.show_tab ? 'true' : 'false'" variant="info">
-                                {{ item.title }}
-                                <i v-if="item.show_tab"  class="fa fa-minus"></i>
-                                <i v-else  class="fa fa-plus"></i>
-                            </b-button>
-                        </b-card-header>
-                        <b-collapse v-model="item.show_tab" :id="'tab-' + index" :visible="item.show_tab" accordion="my-accordion" role="tabpanel" class="accordion_body">
-                            <b-card-body>
-                                <b-card-text>
-                                    <div class="accordian-container" v-html="item.body"></div>
-                                </b-card-text>
-                            </b-card-body>
-                        </b-collapse>
-                    </b-card>
+        		<div class="site_container inside_page_content page_content">
+        			<div class="row">
+        			    <div class="col-md-12">
+                            <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
+                            <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
+        			    </div>
+        			</div>
+        			<div class="row padding_tb_50" v-if="subPages.length > 0">
+                        <div class="col-md-12">
+                            <b-card v-for="(item, index) in subPages" :key="index" no-body class="mb-1">
+                                <b-card-header header-tag="header" class="p-1" role="tab">
+                                    <b-button block @click="item.show_tab = !item.show_tab; toggleOpen=!toggleOpen;" :class="item.show_tab ? 'collapsed' : null" :aria-controls="'tab-' + index" :aria-expanded="item.show_tab ? 'true' : 'false'" variant="info">
+                                        {{ item.title }}
+                                        <i v-if="item.show_tab"  class="fa fa-minus"></i>
+                                        <i v-else  class="fa fa-plus"></i>
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse v-model="item.show_tab" :id="'tab-' + index" :visible="item.show_tab" accordion="my-accordion" role="tabpanel" class="accordion_body">
+                                    <b-card-body>
+                                        <b-card-text>
+                                            <div class="accordian-container" v-html="item.body"></div>
+                                        </b-card-text>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+                        </div>
+                    </div>  
                 </div>
-            </div>  
-        </div>
-        <span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{ toggleOpen }}</span>
-    </transition>
+                <span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{ toggleOpen }}</span>
+            </div>
+        </transition>
     </div>
 </template>
 <style>
