@@ -33,16 +33,16 @@
 @import url("//hello.myfonts.net/count/3a1c2e");
 
   
-@font-face {font-family: 'SofiaPro-Light';src: url('webfonts/3A1C2E_0_0.eot');src: url('webfonts/3A1C2E_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_0_0.woff2') format('woff2'),url('webfonts/3A1C2E_0_0.woff') format('woff'),url('webfonts/3A1C2E_0_0.ttf') format('truetype');}
+@font-face {font-family: 'SofiaPro-Light';src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742602000/3A1C2E_0_0.eot');src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742602000/3A1C2E_0_0.eot?#iefix') format('embedded-opentype'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742610000/3A1C2E_0_0.woff2') format('woff2'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1568742602000/3A1C2E_0_0.woff') format('woff'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742600000/3A1C2E_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'SofiaPro-Medium';src: url('webfonts/3A1C2E_1_0.eot');src: url('webfonts/3A1C2E_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_1_0.woff2') format('woff2'),url('webfonts/3A1C2E_1_0.woff') format('woff'),url('webfonts/3A1C2E_1_0.ttf') format('truetype');}
+@font-face {font-family: 'SofiaPro-Medium';src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742614000/3A1C2E_1_0.eot');src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742614000/3A1C2E_1_0.eot?#iefix') format('embedded-opentype'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742624000/3A1C2E_1_0.woff2') format('woff2'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1568742614000/3A1C2E_1_0.woff') format('woff'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742614000/3A1C2E_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'SofiaPro-Lightitalic';src: url('webfonts/3A1C2E_2_0.eot');src: url('webfonts/3A1C2E_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_2_0.woff2') format('woff2'),url('webfonts/3A1C2E_2_0.woff') format('woff'),url('webfonts/3A1C2E_2_0.ttf') format('truetype');}
+@font-face {font-family: 'SofiaPro-Lightitalic';src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742628000/3A1C2E_2_0.eot');src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742628000/3A1C2E_2_0.eot?#iefix') format('embedded-opentype'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742638000/3A1C2E_2_0.woff2') format('woff2'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1568742628000/3A1C2E_2_0.woff') format('woff'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742626000/3A1C2E_2_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'SofiaPro-Mediumitalic';src: url('webfonts/3A1C2E_3_0.eot');src: url('webfonts/3A1C2E_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_3_0.woff2') format('woff2'),url('webfonts/3A1C2E_3_0.woff') format('woff'),url('webfonts/3A1C2E_3_0.ttf') format('truetype');}
+@font-face {font-family: 'SofiaPro-Mediumitalic';src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742640000/3A1C2E_3_0.eot');src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742640000/3A1C2E_3_0.eot?#iefix') format('embedded-opentype'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742650000/3A1C2E_3_0.woff2') format('woff2'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1568742640000/3A1C2E_3_0.woff') format('woff'),url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1568742640000/3A1C2E_3_0.ttf') format('truetype');}
  
 
 // MIXINS
