@@ -433,9 +433,6 @@ ul.options-list li.highlighted {
     margin: 0 auto;
     background-color: #FFF;
     z-index: 0;
-    .primary_nav_ul {
-        display: flex;
-    }
 }
 #primary_nav ul {
     margin: 0 auto;
