@@ -831,6 +831,7 @@ footer {
             text-transform: uppercase;
             letter-spacing: 2.5px;
             line-height: 36px;
+            font-family: $font-family;
         } 
         .feature_item_link {
             margin: 0 auto;
