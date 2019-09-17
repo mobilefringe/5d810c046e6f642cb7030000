@@ -26,8 +26,8 @@
                             <h3 class="center caps" v-else>Closed</h3>
                         </div>
         		        <div class="home_page_title_container">
-            		        <h5 class="home_page_subtitle center caps">Discover {{ property.name }}</h5>
-            		        <h3 class="home_page_title caps">Find Your Store</h3>
+            		        <h5 class="home_page_subtitle center caps">Explore</h5>
+        		        <h3 class="home_page_title caps">{{ property.name }}</h3>
             		    </div>
             		    <div class="margin_30">
                             <div class="map_search_container">
