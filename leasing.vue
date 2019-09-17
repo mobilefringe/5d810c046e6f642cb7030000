@@ -122,7 +122,7 @@ this.currentPage = response[0].data;
                 loadData: async function(id) {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-community-support.json" }),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-leasing.json" }),
                             this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
