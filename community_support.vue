@@ -112,9 +112,10 @@
                         this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
                     }
 
-                    this.updatePageData(this.id);
+                    
                     this.dataLoaded = true;
                 });
+                this.updatePageData(this.id);
 
             },
             computed: {
