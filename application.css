@@ -1,34 +1,49 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-@font-face {
-    font-family: 'Didot-Regular';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1520382344000/Didot.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1520382344000/Didot.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Didot-Italic';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519771652000/Didot-Italic.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519771652000/Didot-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Didot-Bold';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519280304000/DidotLTStd-Bold.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519280304000/DidotLTStd-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+// @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+// @font-face {
+//     font-family: 'Didot-Regular';
+//     src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1520382344000/Didot.woff2') format('woff2'),
+//         url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1520382344000/Didot.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Didot-Italic';
+//     src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519771652000/Didot-Italic.woff2') format('woff2'),
+//         url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519771652000/Didot-Italic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Didot-Bold';
+//     src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519280304000/DidotLTStd-Bold.woff2') format('woff2'),
+//         url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1519280304000/DidotLTStd-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Helvetica-Neue';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1526697728000/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
-        url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1526697728000/HelveticaNeueLTStd-Bd.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica-Neue';
+//     src: url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000//1526697728000/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+//         url('//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/application/font-woff/1526697728000/HelveticaNeueLTStd-Bd.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+@import url("//hello.myfonts.net/count/3a1c2e");
+
+  
+@font-face {font-family: 'SofiaPro-Light';src: url('webfonts/3A1C2E_0_0.eot');src: url('webfonts/3A1C2E_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_0_0.woff2') format('woff2'),url('webfonts/3A1C2E_0_0.woff') format('woff'),url('webfonts/3A1C2E_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SofiaPro-Medium';src: url('webfonts/3A1C2E_1_0.eot');src: url('webfonts/3A1C2E_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_1_0.woff2') format('woff2'),url('webfonts/3A1C2E_1_0.woff') format('woff'),url('webfonts/3A1C2E_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SofiaPro-Lightitalic';src: url('webfonts/3A1C2E_2_0.eot');src: url('webfonts/3A1C2E_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_2_0.woff2') format('woff2'),url('webfonts/3A1C2E_2_0.woff') format('woff'),url('webfonts/3A1C2E_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SofiaPro-Mediumitalic';src: url('webfonts/3A1C2E_3_0.eot');src: url('webfonts/3A1C2E_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A1C2E_3_0.woff2') format('woff2'),url('webfonts/3A1C2E_3_0.woff') format('woff'),url('webfonts/3A1C2E_3_0.ttf') format('truetype');}
+ 
 
 // MIXINS
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
