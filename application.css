@@ -86,7 +86,7 @@ $social: #000;
 $link: #000;
 
 $font_family: 'SofiaPro-Light', 'Helvetica', 'Arial', sans-serif;
-$font_family: 'SofiaPro-Medium', 'Helvetica', 'Arial', sans-serif;
+$font_family_medium: 'SofiaPro-Medium', 'Helvetica', 'Arial', sans-serif;
 
 [v-cloak] {
     display: none!important;
