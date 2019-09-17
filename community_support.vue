@@ -99,8 +99,9 @@
             },
             created(){
             
-               this.updatePageData(this.id);
-               var temp_repo = this.findRepoByName('Events Banner');
+               
+               this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Events Banner');
                     if (temp_repo) {
                         try {
                             this.pageBanner = temp_repo.images[0];
@@ -109,8 +110,12 @@
                         }
                     } else {
                         this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
-                }
-               this.dataLoaded = true;
+                    }
+
+                    this.updatePageData(this.id);
+                    this.dataLoaded = true;
+                });
+
             },
             computed: {
                 ...Vuex.mapGetters([
