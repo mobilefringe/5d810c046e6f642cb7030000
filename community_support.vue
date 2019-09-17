@@ -1,6 +1,6 @@
 <template>
-    <div v-if="currentPage">
-    <loader v-if="!dataLoaded" v-cloak></loader>
+    <div v-if="currentPage"  v-cloak>
+    <loader v-if="!dataLoaded"></loader>
     <transition name="fade">
 
     		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
