@@ -417,13 +417,15 @@ ul.options-list li.highlighted {
     margin: 0 auto;
     background-color: #FFF;
     z-index: 0;
+    .primary_nav_ul {
+        display: flex;
+    }
 }
 #primary_nav ul {
     margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	position: relative;
-
 	text-align: center;
 }
 #primary_nav ul .menu_item {
