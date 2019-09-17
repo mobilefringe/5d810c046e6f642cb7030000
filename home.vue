@@ -51,13 +51,13 @@
                         	    <div v-if="feature.name" class="feature_item_container">
                         			<img :src="feature.image_url" alt="">
                         			<div class="feature_item_info" >
-                        				<div class="feature_item_content">
+                        				<!--<div class="feature_item_content">-->
                         					<!--<p v-if="feature.description">{{ feature.name }}</p>-->
-                        					<h3>{{ feature.name }}</h3>
-                        					<a class="feature_item_link" :href="feature.url">
-                        					    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>
-                        					</a>
-                        				</div>
+                        				<!--	<h3>{{ feature.name }}</h3>-->
+                        				<!--	<a class="feature_item_link" :href="feature.url">-->
+                        				<!--	    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>-->
+                        				<!--	</a>-->
+                        				<!--</div>-->
                         			</div>
                         	    </div>
                         	    <div v-else class="feature_item_container">
