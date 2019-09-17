@@ -227,9 +227,9 @@
                             value.masonry_class = " ";
                         }
                         if (_.includes(value.name , "Social Media")) {
-                            value.isSocial === true
+                            value.isSocial = true
                         } else {
-                            value.isSocial === false
+                            value.isSocial = false
                         }
                     });
                     return features;
