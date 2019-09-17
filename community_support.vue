@@ -99,7 +99,7 @@
             },
             created(){
                this.updatePageData(this.id);
-               this.dataLoaded === true;
+               this.dataLoaded = true;
             },
             computed: {
                 ...Vuex.mapGetters([
