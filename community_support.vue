@@ -1,5 +1,18 @@
 <template>
     <div v-if="currentPage">
+    <loader v-if="!dataLoaded" v-cloak></loader>
+    <transition name="fade">
+
+    		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+    			<div class="site_container">
+    				<div class="header_content caps">
+    					<h1>{{ $t("events_page.events_header") }}</h1>
+    				</div>
+    			</div>
+    		</div>
+
+
+
         <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content">
@@ -10,6 +23,10 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		
+		
 		<div class="site_container inside_page_content page_content">
 			<div class="row">
 			    <div class="col-md-12">
@@ -39,6 +56,7 @@
             </div>  
         </div>
         <span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{ toggleOpen }}</span>
+    </transition>
     </div>
 </template>
 <style>
