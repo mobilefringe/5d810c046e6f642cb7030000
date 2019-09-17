@@ -944,21 +944,23 @@ footer {
         content: " ";
         height: 1px;
         // width: 330px;
-        width: 150px;
+        width: 250px;
         background: #000;
         position: absolute;
         top: 40px;
-        left: 0;
+        // left: 0;
+        left: 20px;
     }
     &:after {
         content: " ";
         height: 1px;
         // width: 330px;
-        width: 150px;
+        width: 250px;
         background: #000;
         position: absolute;
         top: 40px;
-        right: 0;
+        // right: 0;
+        right: 20px;
     }
 }
 .home_page_title.second {
