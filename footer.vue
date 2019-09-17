@@ -34,5 +34,21 @@
 </template>
 
 <script>
-var _extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e};define(["Vue","vuex","moment","moment-timezone","vue-moment"],function(e,t,n){return e.component("footer-component",{template:template,data:function(){return{}},props:["footer_menu_items","social_media"],computed:_extends({},t.mapGetters(["property"]),{copyright_year:function(){return n().year()}})})});
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function (Vue, Vuex, moment, tz, VueMoment) {
+        return Vue.component("footer-component", {
+            template: template, // the variable template will be injected,
+            data: function data() {
+                return { }
+            },
+            props:['footer_menu_items', 'social_media'],
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                ]),
+                copyright_year() {
+                    return moment().year();
+                }
+            }
+        });
+    });
 </script>
