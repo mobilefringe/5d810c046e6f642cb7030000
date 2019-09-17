@@ -943,7 +943,8 @@ footer {
     &:before {
         content: " ";
         height: 1px;
-        width: 330px;
+        // width: 330px;
+        width: 150px;
         background: #000;
         position: absolute;
         top: 40px;
@@ -952,7 +953,8 @@ footer {
     &:after {
         content: " ";
         height: 1px;
-        width: 330px;
+        // width: 330px;
+        width: 150px;
         background: #000;
         position: absolute;
         top: 40px;
