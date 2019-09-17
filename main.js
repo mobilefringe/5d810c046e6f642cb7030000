@@ -211,16 +211,6 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                         url: "https://twitter.com/shopnorthgate",
                         iconClass: "fa fa-twitter twitter"
                     },
-                    // {
-                    //     name: "YouTube",
-                    //     url: "https://www.youtube.com/user/southlandmallmiami",
-                    //     iconClass: "fa fa-youtube youtube"
-                    // },
-                    // {
-                    //     name: "Google+",
-                    //     url: "https://plus.google.com/+Mysouthlandmall",
-                    //     iconClass: "fa fa-google-plus google"
-                    // },
                     {
                         name: "Instagram",
                         url: "https://www.instagram.com/northgate_shopping_centre/",
