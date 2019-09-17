@@ -146,7 +146,7 @@
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
-            props:['locale'],
+            props:['locale', "social_media"],
             data: function() {
                 return {
                     dataLoaded: false,
