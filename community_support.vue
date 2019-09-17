@@ -89,7 +89,7 @@
                 loadData: async function(id) {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-community-support.json" }),
                             this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
@@ -107,26 +107,26 @@
                                     this.subPages = response[0].data.subpages;
                                 }
                                 
-                                //Add custom banners for indivial pages 
-                                var temp_repo = null;
-                                if ( _.includes(id, 'community-programs')) {
-                                    temp_repo = this.findRepoByName('Community Programs Banner');
-                                } else if ( _.includes(id, 'gift-cards')) {
-                                    temp_repo = this.findRepoByName('Gift Card Banner');
-                                } else if ( _.includes(id, 'guest-services')) {
-                                    temp_repo = this.findRepoByName('Guest Services Banner');
-                                } else if ( _.includes(id, 'sevenoaks-leasing')) {
-                                    temp_repo = this.findRepoByName('Leasing Banner');
-                                } else {
-                                    temp_repo = this.findRepoByName('Pages Banner');
-                                }
+                                // //Add custom banners for indivial pages 
+                                // var temp_repo = null;
+                                // if ( _.includes(id, 'community-programs')) {
+                                //     temp_repo = this.findRepoByName('Community Programs Banner');
+                                // } else if ( _.includes(id, 'gift-cards')) {
+                                //     temp_repo = this.findRepoByName('Gift Card Banner');
+                                // } else if ( _.includes(id, 'guest-services')) {
+                                //     temp_repo = this.findRepoByName('Guest Services Banner');
+                                // } else if ( _.includes(id, 'sevenoaks-leasing')) {
+                                //     temp_repo = this.findRepoByName('Leasing Banner');
+                                // } else {
+                                //     temp_repo = this.findRepoByName('Pages Banner');
+                                // }
                                 
-                                if (temp_repo && temp_repo.images) {
-                                    this.pageBanner = temp_repo.images[0];
-                                } else {
-                                    this.pageBanner = {};
-                                    this.pageBanner.image_url = "";
-                                }
+                                // if (temp_repo && temp_repo.images) {
+                                //     this.pageBanner = temp_repo.images[0];
+                                // } else {
+                                //     this.pageBanner = {};
+                                //     this.pageBanner.image_url = "";
+                                // }
                             }
                         });    
                     });
