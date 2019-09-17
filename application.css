@@ -104,20 +104,20 @@ body {
     // transition: all 0.3s ease;
 }
 h1 {
-    font-family: 'Didot-Bold';
+    font-family: $font_family_medium;
     font-size: 4.5rem;
     line-height: 4.375rem;
     color: #FFF;
 }
 h2 {
     margin: 0;
-    font-family: 'Didot-Bold';
+    font-family: $font_family_medium;
     font-size: 3.5rem;
     line-height: 4.625rem;
 }
 h3 {
     margin: 0;
-    font-family: 'Didot-Bold';
+    font-family: $font_family_medium;
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -669,13 +669,14 @@ footer {
         text-align: center;
         h1 {
             margin: 0;
-            font-family: 'Didot-Bold';
+            font-family: $font_family_medium;
             font-size: 9.375rem;
             line-height: 9.375rem;
         }
         h2 {
             margin: 0;
-            font-family: 'Didot-Regular';
+            // font-family: 'Didot-Regular';
+            font-family:  $font_family_medium;
             font-size: 4.5rem;
             line-height: 4.25rem;
             text-transform: uppercase;
@@ -1232,7 +1233,7 @@ footer {
     }
     a {
         position: relative;
-        font-family: 'Didot-Bold';
+        font-family:  $font_family_medium;
         font-size: 1.25rem;
         line-height: 1.5625rem;
         color: #000;
@@ -1649,7 +1650,7 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         border: 1px solid #000;
-        font-family: 'didot-bold';
+        font-family:  $font_family_medium;
         font-size: 0.75rem;
         line-height: 1.25rem;
         text-transform: uppercase;
@@ -2210,7 +2211,7 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         border: 1px solid #000;
-        font-family: 'didot-bold';
+        font-family:  $font_family_medium;
         font-size: 0.75rem;
         line-height: 1.25rem;
         text-transform: uppercase;
