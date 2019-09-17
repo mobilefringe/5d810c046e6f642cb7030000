@@ -46,29 +46,29 @@
         		        <h3 class="home_page_title caps">{{ property.name }}</h3>
         		    </div>
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
-              <!--          <div v-masonry-tile class="item">-->
-              <!--              <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-              <!--          	    <div v-if="feature.name" class="feature_item_container">-->
-              <!--          			<img :src="feature.image_url" alt="">-->
-              <!--          			<div class="feature_item_info" >-->
-              <!--          				<div class="feature_item_content">-->
+                        <div v-masonry-tile class="item">
+                            <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
+                        	    <div v-if="feature.name" class="feature_item_container">
+                        			<img :src="feature.image_url" alt="">
+                        			<div class="feature_item_info" >
+                        				<div class="feature_item_content">
                         					<!--<p v-if="feature.description">{{ feature.name }}</p>-->
-              <!--          					<h3>{{ feature.name }}</h3>-->
-              <!--          					<a class="feature_item_link" :href="feature.url">-->
-              <!--          					    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>-->
-              <!--          					</a>-->
-              <!--          				</div>-->
-              <!--          			</div>-->
-              <!--          	    </div>-->
-              <!--          	    <div v-else class="feature_item_container">-->
-              <!--          	        <a :href="feature.url">-->
-              <!--              			<img :src="feature.image_url" :alt="feature.name">-->
-              <!--              			<div class="feature_item_info"></div>-->
-              <!--              		</a>-->
-              <!--          	    </div>-->
-              <!--              </div>-->
-              <!--          </div>-->
-              <!--      </div>-->
+                        					<h3>{{ feature.name }}</h3>
+                        					<a class="feature_item_link" :href="feature.url">
+                        					    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>
+                        					</a>
+                        				</div>
+                        			</div>
+                        	    </div>
+                        	    <div v-else class="feature_item_container">
+                        	        <a :href="feature.url">
+                            			<img :src="feature.image_url" :alt="feature.name">
+                            			<div class="feature_item_info"></div>
+                            		</a>
+                        	    </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
                     <!--    <div v-masonry-tile class="item">-->
                     <!--        <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
