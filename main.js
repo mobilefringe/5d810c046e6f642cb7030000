@@ -128,25 +128,44 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                         href: "/promotions",
                     },
                     {
-                        name: "nav.about",
+                        name: "nav.guest_services",
                         id: "menu3",
                         href: "",
                         sub_menu: [
                             {
-                                name: "nav.contact",
-                                href: "/contact-us"
+                                name: "nav.guest_services",
+                                href: "/guest-services"
                             },
                             {
-                                name: "nav.hours",
-                                href: "/hours"
+                                name: "nav.accessibility",
+                                href: "/accessibility"
                             },
                             {
-                                name: "nav.mall_info",
-                                href: "/mall-information"
+                                name: "nav.community_support",
+                                href: "/community-support"
+                            }
+                        ]
+                    },
+                    {
+                        name: "nav.centre-information",
+                        id: "menu4",
+                        href: "",
+                        sub_menu: [
+                            {
+                                name: "nav.about_us",
+                                href: "/about"
                             },
                             {
                                 name: "nav.jobs",
                                 href: "/jobs"
+                            },
+                            {
+                                name: "nav.leasing",
+                                href: "/leasing"
+                            },
+                            {
+                                name: "nav.contact_us",
+                                href: "/contact"
                             }
                         ]
                     }
