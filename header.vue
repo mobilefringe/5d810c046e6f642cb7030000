@@ -63,7 +63,7 @@
 			</div>
 			<div class="row">
 			    <div class="col-md-2 hidden_phone"></div>
-				<div class="col-sm-12 col-md-8">
+				<div class="col-sm-12 col-md-9">
 					<nav id="primary_nav" class="hidden_phone">
 						<ul class="primary_nav_ul">
 						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
