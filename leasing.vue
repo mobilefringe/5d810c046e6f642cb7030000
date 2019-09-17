@@ -1,44 +1,51 @@
 <template>
-    <div v-if="currentPage">
-        <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-			<div class="site_container">
-				<div class="header_content">
-					<h1 v-if="locale=='en-ca'">{{currentPage.title}}</h1>
-					<h1 v-else>{{currentPage.title_2}}</h1>
-					<h2 style="display:none;">Scroll to  view page details</h2>
-					<h3 style="display:none;">View page details</h3>
-				</div>
-			</div>
-		</div>
-		<div class="site_container inside_page_content page_content">
-			<div class="row">
-			    <div class="col-md-12">
-                    <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
-                    <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
-			    </div>
-			</div>
-			<div class="row padding_tb_50" v-if="subPages.length > 0">
-                <div class="col-md-12">
-                    <b-card v-for="(item, index) in subPages" :key="index" no-body class="mb-1">
-                        <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-button block @click="item.show_tab = !item.show_tab; toggleOpen=!toggleOpen;" :class="item.show_tab ? 'collapsed' : null" :aria-controls="'tab-' + index" :aria-expanded="item.show_tab ? 'true' : 'false'" variant="info">
-                                {{ item.title }}
-                                <i v-if="item.show_tab"  class="fa fa-minus"></i>
-                                <i v-else  class="fa fa-plus"></i>
-                            </b-button>
-                        </b-card-header>
-                        <b-collapse v-model="item.show_tab" :id="'tab-' + index" :visible="item.show_tab" accordion="my-accordion" role="tabpanel" class="accordion_body">
-                            <b-card-body>
-                                <b-card-text>
-                                    <div class="accordian-container" v-html="item.body"></div>
-                                </b-card-text>
-                            </b-card-body>
-                        </b-collapse>
-                    </b-card>
+    <div> <!-- without an outer container div this component template will not render -->
+        <loader v-if="!dataLoaded"></loader>
+        <transition name="fade">
+            <div v-if="dataLoaded" v-cloak>
+
+        		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        					<h1>{{ $t("events_page.events_header") }}</h1>
+        				</div>
+        			</div>
+        		</div>
+		
+		
+		
+		
+        		<div class="site_container inside_page_content page_content">
+        			<div class="row">
+        			    <div class="col-md-12">
+                            <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
+                            <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
+        			    </div>
+        			</div>
+        			<div class="row padding_tb_50" v-if="subPages.length > 0">
+                        <div class="col-md-12">
+                            <b-card v-for="(item, index) in subPages" :key="index" no-body class="mb-1">
+                                <b-card-header header-tag="header" class="p-1" role="tab">
+                                    <b-button block @click="item.show_tab = !item.show_tab; toggleOpen=!toggleOpen;" :class="item.show_tab ? 'collapsed' : null" :aria-controls="'tab-' + index" :aria-expanded="item.show_tab ? 'true' : 'false'" variant="info">
+                                        {{ item.title }}
+                                        <i v-if="item.show_tab"  class="fa fa-minus"></i>
+                                        <i v-else  class="fa fa-plus"></i>
+                                    </b-button>
+                                </b-card-header>
+                                <b-collapse v-model="item.show_tab" :id="'tab-' + index" :visible="item.show_tab" accordion="my-accordion" role="tabpanel" class="accordion_body">
+                                    <b-card-body>
+                                        <b-card-text>
+                                            <div class="accordian-container" v-html="item.body"></div>
+                                        </b-card-text>
+                                    </b-card-body>
+                                </b-collapse>
+                            </b-card>
+                        </div>
+                    </div>  
                 </div>
-            </div>  
-        </div>
-        <span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{ toggleOpen }}</span>
+                <span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{ toggleOpen }}</span>
+            </div>
+        </transition>
     </div>
 </template>
 <style>
@@ -65,6 +72,9 @@
             template: template, // the variable template will be injected,
             data: function() {
                 return {
+                    dataLoaded: false, 
+                    
+                    
                     pageBanner : null,
                     currentPage: null,
                     subPages: {},
@@ -77,7 +87,30 @@
                 this.updatePageData(to.params.id);
             },
             created(){
-               this.updatePageData(this.id);
+            
+               
+               this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Events Banner');
+                    if (temp_repo) {
+                        try {
+                            this.pageBanner = temp_repo.images[0];
+                        } catch(e) {
+                            
+                        }
+                    } else {
+                        this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
+                    }
+
+this.currentPage = response[0].data;
+                                if (response[0].data.subpages) {
+                                    this.subPages = response[0].data.subpages;
+                                }
+                    
+                    this.dataLoaded = true;
+                    // this.updatePageData(this.id);
+                });
+
+
             },
             computed: {
                 ...Vuex.mapGetters([
@@ -89,7 +122,7 @@
                 loadData: async function(id) {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-community-support.json" }),
                             this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
@@ -107,26 +140,26 @@
                                     this.subPages = response[0].data.subpages;
                                 }
                                 
-                                //Add custom banners for indivial pages 
-                                var temp_repo = null;
-                                if ( _.includes(id, 'community-programs')) {
-                                    temp_repo = this.findRepoByName('Community Programs Banner');
-                                } else if ( _.includes(id, 'gift-cards')) {
-                                    temp_repo = this.findRepoByName('Gift Card Banner');
-                                } else if ( _.includes(id, 'guest-services')) {
-                                    temp_repo = this.findRepoByName('Guest Services Banner');
-                                } else if ( _.includes(id, 'sevenoaks-leasing')) {
-                                    temp_repo = this.findRepoByName('Leasing Banner');
-                                } else {
-                                    temp_repo = this.findRepoByName('Pages Banner');
-                                }
+                                // //Add custom banners for indivial pages 
+                                // var temp_repo = null;
+                                // if ( _.includes(id, 'community-programs')) {
+                                //     temp_repo = this.findRepoByName('Community Programs Banner');
+                                // } else if ( _.includes(id, 'gift-cards')) {
+                                //     temp_repo = this.findRepoByName('Gift Card Banner');
+                                // } else if ( _.includes(id, 'guest-services')) {
+                                //     temp_repo = this.findRepoByName('Guest Services Banner');
+                                // } else if ( _.includes(id, 'sevenoaks-leasing')) {
+                                //     temp_repo = this.findRepoByName('Leasing Banner');
+                                // } else {
+                                //     temp_repo = this.findRepoByName('Pages Banner');
+                                // }
                                 
-                                if (temp_repo && temp_repo.images) {
-                                    this.pageBanner = temp_repo.images[0];
-                                } else {
-                                    this.pageBanner = {};
-                                    this.pageBanner.image_url = "";
-                                }
+                                // if (temp_repo && temp_repo.images) {
+                                //     this.pageBanner = temp_repo.images[0];
+                                // } else {
+                                //     this.pageBanner = {};
+                                //     this.pageBanner.image_url = "";
+                                // }
                             }
                         });    
                     });
