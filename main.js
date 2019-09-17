@@ -164,7 +164,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                                 href: "/leasing"
                             },
                             {
-                                name: "nav.contact_us",
+                                name: "nav.contact",
                                 href: "/contact"
                             }
                         ]
