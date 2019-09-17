@@ -114,8 +114,9 @@
 
                     
                     this.dataLoaded = true;
+                    this.updatePageData(this.id);
                 });
-                this.updatePageData(this.id);
+
 
             },
             computed: {
