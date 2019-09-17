@@ -782,6 +782,10 @@ footer {
             color: #fff;
         }
         
+        &:hover {
+            box-shadow: 0 0 20px #333;;
+        }
+        
         
         // &::after {
         //     content: "";
