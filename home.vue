@@ -64,7 +64,9 @@
                         	        <a :href="feature.url">
                             			<img :src="feature.image_url" :alt="feature.name">
                             			<div class="feature_item_info"></div>
-                            			<p>hi</p>
+                            			<div>
+                            			    <h3>Follow Us</h3>
+                            			</div>
                             		</a>
                         	    </div>
                             </div>
