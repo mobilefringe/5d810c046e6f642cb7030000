@@ -774,6 +774,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        h3 {
+            text-transform: uppercase;
+        }
         
         &::after {
             content: "";
