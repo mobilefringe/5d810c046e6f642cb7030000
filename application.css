@@ -117,7 +117,7 @@ h2 {
 }
 h3 {
     margin: 0;
-    font-family: $font_family_medium;
+    font-family: $font_family;
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -831,7 +831,6 @@ footer {
             text-transform: uppercase;
             letter-spacing: 2.5px;
             line-height: 36px;
-            font-family: $font-family;
         } 
         .feature_item_link {
             margin: 0 auto;
