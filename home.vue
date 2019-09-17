@@ -48,25 +48,26 @@
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
                         <div v-masonry-tile class="item">
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
-                        	    <div v-if="feature.name" class="feature_item_container" >
+                        	    <div v-if="feature.description" class="feature_item_container" >
                         			<img :src="feature.image_url" alt="">
                         			<div class="feature_item_info" >
-                        				<!--<div class="feature_item_content">-->
-                        					<!--<p v-if="feature.description">{{ feature.name }}</p>-->
-                        				<!--	<h3>{{ feature.name }}</h3>-->
-                        				<!--	<a class="feature_item_link" :href="feature.url">-->
-                        				<!--	    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>-->
-                        				<!--	</a>-->
-                        				<!--</div>-->
+                        				<div class="feature_item_content">
+                        					<p v-if="feature.description">{{ feature.name }}</p>
+                        					<h3>{{ feature.name }}</h3>
+                        					<a class="feature_item_link" :href="feature.url">
+                        					    <div class="feature_item_more animated_btn" :aria-label="feature.name">{{feature.description}}</div>
+                        					</a>
+                        				</div>
                         			</div>
                         	    </div>
                         	    <div v-else class="feature_item_container">
                         	        <a :href="feature.url">
                             			<img :src="feature.image_url" :alt="feature.name">
-                            			<div class="feature_item_info"></div>
-                            			<div>
-                            			    <h3>Follow Us</h3>
+                            			<div v-if="" class="feature_item_info">
+                            			    
+                            			    
                             			</div>
+                            			
                             		</a>
                         	    </div>
                             </div>
@@ -205,6 +206,11 @@
                             value.masonry_class = "grid-item--height2";
                         } else {
                             value.masonry_class = " ";
+                        }
+                        if (value.name === "Social Media") {
+                            value.isSocial === true
+                        } else {
+                            value.isSocial === false
                         }
                     });
                     return features;
