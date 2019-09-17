@@ -226,7 +226,7 @@
                         } else {
                             value.masonry_class = " ";
                         }
-                        if (value.name === "Social Media") {
+                        if (_.includes(value.name , "Social Media")) {
                             value.isSocial === true
                         } else {
                             value.isSocial === false
