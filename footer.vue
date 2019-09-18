@@ -4,9 +4,21 @@
 		    <div class="footer_logo">
 	            <div class="property_logo">
 			        <router-link to="/">
-			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743936000/Northgate-footer-logo.png" alt="Northgate Shopping Centre Logo"/>
+			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743936000/Northgate-footer-logo.png" alt="Northgate Shopping Centre Logo."/>
 		            </router-link>
-		        </div>    
+		        </div>
+		        <div class="property_logo">
+			        
+			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568328654000/Morguard.png" alt="Property managed by Morguard."/>
+		            
+		        </div>
+		        <div class="property_logo">
+			        
+			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743911000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
+		            
+		        </div>
+		        
+		        
 		        <div class="center-block">
 		            <nav id="footer_nav">
 						<ul>
