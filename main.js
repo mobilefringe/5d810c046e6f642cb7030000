@@ -172,20 +172,20 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 ],
                 footer_menu_items: [
                     {
-                        name: "Legal",
-                        href: "/legal",
+                        name: "copyright",
+                        href: "/copyright",
                     },
                     {
-                        name: "Leasing & Advertising",
-                        href: "/leasing",
+                        name: "privacy policy",
+                        href: "/pages/privacy policy",
                     },
                     {
-                        name: "Code of Conduct",
+                        name: "Terms & Conditions",
+                        href: "/terms",
+                    },
+                    {
+                        name: "Code of conduct",
                         href: "/code-of-conduct",
-                    },
-                    {
-                        name: "Site Map",
-                        href: "/map",
                     }
                 ],
                 social_media: [
