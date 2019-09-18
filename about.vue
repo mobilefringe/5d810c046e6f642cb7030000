@@ -14,83 +14,20 @@
         		
                 <div class="site_container">
     				<div class="pages_content">
-    				    <h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; width: 100%; font-size: 16px !important; text-align: center; padding: 15px 15px; text-transform: uppercase; margin: 0 -15px;">Located near Center Court</h2>
-    				    
-    				    
-                        
-                        <div class="services_available"> 
-                            <h3>Now located by the <strong>Parking Garage entrance</strong></h3>
-                            <ul id="services_list">
-                                <li>
-                                    <img>
-                                    <p>Stroller, wheelchair & scooter rentals</p>
-                                </li>
-                                
-                                <li>
-                                    <img>
-                                    <p>Portable cell phone chargers</p>
-                                </li>
-                                
-                                <li>
-                                    <img>
-                                    <p>Shopping Centre Information</p>
-                                </li>
-                                
-                                <li>
-                                    <img>
-                                    <p>Northgate Gift Cards</p>
-                                </li>
-                                
-                                <li>
-                                    <img>
-                                    <p>Security Services</p>
-                                </li>
-                                
-                                <li>
-                                    <img>
-                                    <p>Lost & Found</p>
-                                </li>
-                                
-                            </ul>
-                        </div> <!--services available ends-->
+    				    <div>
+    				        <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827247000/history.png" alt="Northgate Shopping Centre's historic timeline.">
+    				    </div>
                         
 
 
-                        <div id="wheelchair-services">
-                            <h2>Accessibility</h2>
-                                <p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a>.
-                                
-                                To provide feedback regarding Morguard’s Accessibility Policy, please contact us:<br />
-                                <strong>E-mail:</strong> <a href="mailto:accessibility@morguard.com">accessibility@morguard.com</a><br />
-                                <strong>Local:</strong> <a href="tel:+17054728110">705-472-8110</a><br />
-                                <strong>Head Office:</strong> <a href="tel:+19052813800">905-281-3800</a><br />
-                                <strong>Mail:</strong> 55 City Centre Drive, Suite 800, Mississauga, Ontario L5B 1M3</p>
-                            <h2 style="margin-top: 50px;">Strollers, Wheelchairs and Power Scooters</h2>
-                                <p>For your shopping convenience, Single and Double Strollers are available at Guest Services for a fully refundable $20 deposit per device, cash only please. 2 hour limit per rental.  </p>
-                                <p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.
-    </p>
-    
-                        </div> <!--wheelchair services ends-->
-
-                        <section class="clear fix" style="background: black; padding: 2em 15px; margin: 0px -15px;">
-                            <div id="gift-cards-div" class="border-bottom">
-                                <h2 id="gift-cards">Gift Cards</h2>
-                                    <p style="color: white;"><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
-                            </div>
-                            
-                            <div id="benefits" class="clearfix">
-                                <div class="left">
-                                    <h2 style="color: #f10044;">Corporate Benefits</h2>
-                                    <p style="color: white;">Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
-                                </div>
-                            
-                                <div class="right">
-                                    <h2 style="color: #f10044;">Participating Merchants</h2>
-                                    <p style="color: white;">Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
-                                </div>
-                            
-                            </div>
-                        </section> <!--gift cards black background ends-->
+                        <div>
+                            <p>Northgate is anchored by Best Buy and Walmart and offers over 100 quality stores with a unique mix of both independent and national retailers such as Gap, American Eagle Outfitters, Boathouse, West49, People’s Jewelers, Body Shop and Eclipse.</p>
+                            <p>Northgate Shopping Centre is currently managed by <a href="https://www.morguard.com/" target="_blank">Morguard</a>, a fully integrated real estate company. They own, manage and invest in high-quality, well-located, geographically diversified assets across North America, including a Retail portfolio of more than 18 million square feet of local, regional, super regional, mixed-use and development properties in more than 63 Canadian and U.S. communities. Morguard understands the real estate requirements of retailers with a focus to maximize traffic, sales, and market share. Their disciplined merchandising strategies ensure all aspects of their retail properties are optimized. To learn more, visit <a href="https://www.morguard.com/" target="_blank">morguard.com</a>.</p>
+                        </div>
+                        
+                        <div>
+                            <p>Northgate strives to provide a safe and pleasant shopping environment for all our shopping centre visitors, patrons and employees. Please take a moment to review our Code of Conduct.</p>
+                        </div>
                     
                     
                         <div id="spare-change-div">
