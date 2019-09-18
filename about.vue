@@ -21,12 +21,13 @@
 
 
                         <div>
-                            <p>Northgate is anchored by Best Buy and Walmart and offers over 100 quality stores with a unique mix of both independent and national retailers such as Gap, American Eagle Outfitters, Boathouse, West49, People’s Jewelers, Body Shop and Eclipse.</p>
-                            <p>Northgate Shopping Centre is currently managed by <a href="https://www.morguard.com/" target="_blank">Morguard</a>, a fully integrated real estate company. They own, manage and invest in high-quality, well-located, geographically diversified assets across North America, including a Retail portfolio of more than 18 million square feet of local, regional, super regional, mixed-use and development properties in more than 63 Canadian and U.S. communities. Morguard understands the real estate requirements of retailers with a focus to maximize traffic, sales, and market share. Their disciplined merchandising strategies ensure all aspects of their retail properties are optimized. To learn more, visit <a href="https://www.morguard.com/" target="_blank">morguard.com</a>.</p>
+                            <p><span>Northgate</span> is anchored by <span>Best Buy</span> and <span>Walmart</span> and offers over 100 quality stores with a unique mix of both independent and national retailers such as <span>Gap, American Eagle Outfitters, Boathouse, West49, People’s Jewelers, Body Shop</span> and Eclipse</span>.</p>
+                            
+                            <p><span>Northgate Shopping Centre</span> is currently managed by <a href="https://www.morguard.com/" target="_blank">Morguard</a>, a fully integrated real estate company. They own, manage and invest in high-quality, well-located, geographically diversified assets across North America, including a Retail portfolio of more than 18 million square feet of local, regional, super regional, mixed-use and development properties in more than 63 Canadian and U.S. communities. Morguard understands the real estate requirements of retailers with a focus to maximize traffic, sales, and market share. Their disciplined merchandising strategies ensure all aspects of their retail properties are optimized. To learn more, visit <a href="https://www.morguard.com/" target="_blank">morguard.com</a>.</p>
                         </div>
                         
                         <div>
-                            <p>Northgate strives to provide a safe and pleasant shopping environment for all our shopping centre visitors, patrons and employees. Please take a moment to review our Code of Conduct.</p>
+                            <p><span>Northgate</span> strives to provide a safe and pleasant shopping environment for all our shopping centre visitors, patrons and employees. Please take a moment to review our Code of Conduct.</p>
                         </div>
                     
                     
