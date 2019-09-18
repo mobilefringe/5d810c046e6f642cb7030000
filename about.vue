@@ -27,7 +27,7 @@
                         </div>
                         
                         <div>
-                            <p><span>Northgate</span> strives to provide a safe and pleasant shopping environment for all our shopping centre visitors, patrons and employees. Please take a moment to review our Code of Conduct.</p>
+                            <p><span>Northgate</span> strives to provide a safe and pleasant shopping environment for all our shopping centre visitors, patrons and employees. Please take a moment to review our <a href="https://www.mallmaverick.com/system/site_images/photos/000/057/519/original/NorthgateCodeofConduct.pdf?1568825035" target="_blank">Code of Conduct</a>.</p>
                         </div>
                     
                     
