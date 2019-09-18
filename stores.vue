@@ -23,7 +23,7 @@
         					<i id="search_icon" class="fa fa-search"></i>
         				</div>
         				
-        				<div class="store_category">
+        				<div class="store_category stores_button_container">
         					<v-select 
         					    v-model="selectedCat" 
         					    :options="dropDownCats" 
