@@ -31,14 +31,16 @@
 					</nav>    
 		        </div>
 		        <hr class="visible_phone">
-	            <div class="social_icons">
-                    <span v-for="item in social_media">
-                        <a :href="item.url" target="_blank">
-                            <i :class="item.iconClass" aria-hidden="true"></i>
-                            <p class="accessibility">{{ item.name }}</p>
-                        </a>
-                    </span>
-                </div>    
+		        
+	            <!--<div class="social_icons">-->
+             <!--       <span v-for="item in social_media">-->
+             <!--           <a :href="item.url" target="_blank">-->
+             <!--               <i :class="item.iconClass" aria-hidden="true"></i>-->
+             <!--               <p class="accessibility">{{ item.name }}</p>-->
+             <!--           </a>-->
+             <!--       </span>-->
+             <!--   </div>    -->
+             
 		    </div>
 			<div class="footer_terms">
 				<p>&copy; {{copyright_year}} <span class="caps">{{property.name}}</span> | {{$t("footer.all_rights")}}<br class="visible_phone"/> <router-link to="/pages/southland-privacy-policy">{{$t("footer.privacy_policy")}}</router-link> | <span> {{$t("footer.powered_by")}} <a href="https://www.mallmaverick.com" target="_blank">Mall Maverick</a></span></p>
