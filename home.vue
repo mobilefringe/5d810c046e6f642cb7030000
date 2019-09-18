@@ -224,15 +224,15 @@
             created () {
                 this.loadData().then(response => {
                     console.log(response)
-                    // var socialFeed = response[3].data;
-                    // var social_feed = socialFeed.social.instagram;
-                    // this.instaFeed = _.slice(social_feed, [0], [6]);
-                    // this.instaFeed.map(insta => {
-                    //     if(insta.caption != null){
-                    //         insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
-                    //     }
-                    // });
-                    // console.log(this.instaFeed)
+                    var socialFeed = response[3].data;
+                    var social_feed = socialFeed.social.instagram;
+                    this.instaFeed = _.slice(social_feed, [0], [6]);
+                    this.instaFeed.map(insta => {
+                        if(insta.caption != null){
+                            insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
+                        }
+                    });
+                    console.log(this.instaFeed)
                     this.dataLoaded = true;  
                 });
                 // this.loadData().then(response => {
@@ -414,7 +414,12 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "popups")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "banners"), 
+                            this.$store.dispatch("getData", "feature_items"), 
+                            this.$store.dispatch("getData", "popups"),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://cerritos.mallmaverick.com/api/v4/cerritos/social.json" })
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
