@@ -125,7 +125,7 @@
         		    <div class="row">
         		    
         		        <div class="row hidden-xs margin_60">
-                            <div class="col-md-8 col-md-offset-2">
+                            <div class="col-md-8">
                                 <div class="insta-feed-container">
                                     <div class="insta-feed-image " v-for="(item, index) in instaFeed">
                                         <a :href="item.link" target="_blank">
