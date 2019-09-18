@@ -421,7 +421,7 @@
                             this.$store.dispatch("getData", "banners"), 
                             this.$store.dispatch("getData", "feature_items"), 
                             this.$store.dispatch("getData", "popups"),
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://cerritos.mallmaverick.com/api/v4/cerritos/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://northgate.mallmaverick.com/api/v4/northgate/social.json" })
                         ]);
                         return results;
                     } catch (e) {
