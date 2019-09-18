@@ -111,7 +111,7 @@
                         try {
                             this.pageBanner = temp_repo.images[0];
                         } catch(e) {
-                            
+                            this.pageBanner = { "image_url": "" }
                         }
                     } else {
                         this.pageBanner = { "image_url": "" }
