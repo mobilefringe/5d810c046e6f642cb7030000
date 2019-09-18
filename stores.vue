@@ -22,6 +22,20 @@
         					</search-component>
         					<i id="search_icon" class="fa fa-search"></i>
         				</div>
+        				
+        				<div class="store_category">
+        					<v-select 
+        					    v-model="selectedCat" 
+        					    :options="dropDownCats" 
+        					    :searchable="false" 
+        					    :on-change="filterByCategory" 
+        					    class="category-select" 
+        					    placeholder="Category" 
+        					    id="selectByCat"
+        					    transition="dropdown-fade"
+        				    ></v-select>
+        				</div>
+        				
         				<router-link to="/map">
         				    <div class="stores_button_container map_link">
         				        {{ $t("stores_page.view_map") }}
