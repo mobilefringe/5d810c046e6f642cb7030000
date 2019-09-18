@@ -18,7 +18,7 @@
 		        
 		        <div class="property_logo">
     			        
-    			    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743911000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
+    			    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828932000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
     		            
     		    </div>
 		        
