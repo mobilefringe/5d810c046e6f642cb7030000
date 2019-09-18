@@ -13,12 +13,14 @@
     			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568328654000/Morguard.png" alt="Property managed by Morguard."/>
     		            
     		        </div>
-    		        <div class="property_logo">
-    			        
-    			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743911000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
-    		            
-    		        </div>
+    		        
 		        </div> <!--footer_logo_container ends-->
+		        
+		        <div class="property_logo">
+    			        
+    			    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743911000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
+    		            
+    		    </div>
 		        
 		        
 		        <div class="center-block">
