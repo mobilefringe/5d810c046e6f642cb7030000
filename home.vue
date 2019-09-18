@@ -204,6 +204,21 @@
                     },
                     suggestionAttribute: "name",
                     storeSearch: null,
+                    
+                    instaOptions: {
+                        arrows: true,
+                        autoplay: true,
+                        autoplaySpeed: 8000,
+                        cssEase: 'linear',
+                        dots: false,
+                        fade: true,
+                        infinite: true,
+                        slidesToShow: 1,
+                        speed: 1000,
+                        nextArrow: '.insta_next',
+                        prevArrow: '.insta_prev'
+                    },
+                    instaFeed: null
                 }
             },
             created () {
