@@ -82,16 +82,16 @@
                         
                         <div id="benefits" class="clearfix">
                             <div class="left">
-                            <h2 style="color: #f10044;">Corporate Benefits</h2>
-                            <p style="color: white;">Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
-                        </div>
+                                <h2 style="color: #f10044;">Corporate Benefits</h2>
+                                <p style="color: white;">Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
+                            </div>
                         
-                        <div class="right">
-                            <h2 style="color: #f10044;">Participating Merchants</h2>
-                            <p style="color: white;">Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
-                        </div>
+                            <div class="right">
+                                <h2 style="color: #f10044;">Participating Merchants</h2>
+                                <p style="color: white;">Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
+                            </div>
                         
-                    </div>
+                        </div>
                     </section>
 <div id="spare-change-div">
 <h2>Turn Spare Change into a Northgate Gift Card</h2>
