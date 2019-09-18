@@ -185,7 +185,9 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                     },
                     {
                         name: "Code of conduct",
-                        href: "/code-of-conduct",
+                        href: "https://www.mallmaverick.com/system/site_images/photos/000/057/519/original/NorthgateCodeofConduct.pdf?1568825035",
+                        target="_blank"
+                        
                     }
                 ],
                 social_media: [
