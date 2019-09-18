@@ -3,6 +3,15 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
+            
+                <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        					<h1>{{ $t("events_page.events_header") }}</h1>
+        				</div>
+        			</div>
+        		</div>
+        		
                 <div class="site_container">
     				<div class="pages_content">
     				    <h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; width: 100%; font-size: 16px !important; text-align: center; padding: 15px 15px; text-transform: uppercase; margin: 0 -15px;">Located near Center Court</h2>
