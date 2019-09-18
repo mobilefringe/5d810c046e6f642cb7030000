@@ -58,34 +58,41 @@
                         
 
 
-<div id="wheelchair-services">
-<h2>Accessibility</h2>
-<p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a><br />
-To provide feedback regarding Morguard’s Accessibility Policy, please contact us:<br />
-<strong>E-mail:</strong> <a href="mailto:accessibility@morguard.com">accessibility@morguard.com</a><br />
-<strong>Local:</strong> <a href="tel:+17054728110">705-472-8110</a><br />
-<strong>Head Office:</strong> <a href="tel:+19052813800">905-281-3800</a><br />
-<strong>Mail:</strong> 55 City Centre Drive, Suite 800, Mississauga, Ontario L5B 1M3</p>
-<h2 style="margin-top: 50px;">Strollers, Wheelchairs and Power Scooters</h2>
-<p>For your shopping convenience, Single and Double Strollers are available at Guest Services for a fully refundable $20 deposit per device, cash only please. 2 hour limit per rental.  </p>
-<p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.
-</p></div>
-<section class="clear fix" style="background: black; padding: 2em 15px; margin: 0px -15px;">
-<div id="gift-cards-div" class="border-bottom">
-<h2 id="gift-cards">Gift Cards</h2>
-<p style="color: white;"><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
-</div>
-<div id="benefits" class="clearfix">
-<div class="left">
-<h2 style="color: #f10044;">Corporate Benefits</h2>
-<p style="color: white;">Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
-</div>
-<div class="right">
-<h2 style="color: #f10044;">Participating Merchants</h2>
-<p style="color: white;">Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
-</div>
-</div>
-</section>
+                    <div id="wheelchair-services">
+                        <h2>Accessibility</h2>
+                            <p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a>.
+                            
+                            To provide feedback regarding Morguard’s Accessibility Policy, please contact us:<br />
+                            <strong>E-mail:</strong> <a href="mailto:accessibility@morguard.com">accessibility@morguard.com</a><br />
+                            <strong>Local:</strong> <a href="tel:+17054728110">705-472-8110</a><br />
+                            <strong>Head Office:</strong> <a href="tel:+19052813800">905-281-3800</a><br />
+                            <strong>Mail:</strong> 55 City Centre Drive, Suite 800, Mississauga, Ontario L5B 1M3</p>
+                        <h2 style="margin-top: 50px;">Strollers, Wheelchairs and Power Scooters</h2>
+                            <p>For your shopping convenience, Single and Double Strollers are available at Guest Services for a fully refundable $20 deposit per device, cash only please. 2 hour limit per rental.  </p>
+                            <p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.
+</p>
+
+                    </div>
+
+                    <section class="clear fix" style="background: black; padding: 2em 15px; margin: 0px -15px;">
+                        <div id="gift-cards-div" class="border-bottom">
+                            <h2 id="gift-cards">Gift Cards</h2>
+                                <p style="color: white;"><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
+                        </div>
+                        
+                        <div id="benefits" class="clearfix">
+                            <div class="left">
+                            <h2 style="color: #f10044;">Corporate Benefits</h2>
+                            <p style="color: white;">Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
+                        </div>
+                        
+                        <div class="right">
+                            <h2 style="color: #f10044;">Participating Merchants</h2>
+                            <p style="color: white;">Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
+                        </div>
+                        
+                    </div>
+                    </section>
 <div id="spare-change-div">
 <h2>Turn Spare Change into a Northgate Gift Card</h2>
 <p>It&#8217;s easy to turn your spare change into something you have been wishing for at Northgate!</p>
