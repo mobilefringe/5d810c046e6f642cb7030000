@@ -17,16 +17,47 @@
     				    <h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; width: 100%; font-size: 16px !important; text-align: center; padding: 15px 15px; text-transform: uppercase; margin: 0 -15px;">Located near Center Court</h2>
     				    
     				    
-                        <h3 style="text-align: center; max-width: 600px; margin: 0 auto; font-weight: normal; letter-spacing: 1px; line-height: 1.5em; margin-top: 1em;">Now located by the <strong>Parking Garage entrance</strong></h3>
-<ul id="services_list" class="clearfix">
-<li style="background-position: center -1219px;">Stroller, wheelchair &amp; scooter rentals</li>
-<li style="background-position: center -789px;">Portable cell phone chargers</li>
-<li style="background-position: center -653px;">Shopping Centre Information</li>
-<li style="background-position: center -960px;">Northgate<br />
-Gift Cards</li>
-<li style="background-position: center -169px;">Security Services</li>
-<li style="background-position: center -1088px;">Lost &amp; Found</li>
-</ul>
+                        
+                    <div>
+                        <h3>Now located by the <strong>Parking Garage entrance</strong></h3>
+                        <ul id="services_list">
+                            <li>
+                                <img>
+                                <p>Stroller, wheelchair & scooter rentals</p>
+                            </li>
+                            
+                            <li>
+                                <img>
+                                <p>Portable cell phone chargers</p>
+                            </li>
+                            
+                            <li>
+                                <img>
+                                <p>Shopping Centre Information</p>
+                            </li>
+                            
+                            <li>
+                                <img>
+                                <p>Northgate Gift Cards</p>
+                            </li>
+                            
+                            <li>
+                                <img>
+                                <p>Security Services</p>
+                            </li>
+                            
+                            <li>
+                                <img>
+                                <p>Lost & Found</p>
+                            </li>
+                            
+                        </ul>
+                        
+                        
+                    </div>
+                        
+
+
 <div id="wheelchair-services">
 <h2>Accessibility</h2>
 <p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a><br />
