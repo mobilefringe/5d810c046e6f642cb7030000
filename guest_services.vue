@@ -5,9 +5,9 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="site_container">
     				<div class="pages_content">
-    				
-    				
-<h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; font-size: 16px !important; text-align: center; padding: 15px 15px; margin: 0 -15px;">Located near Center Court</h2>
+    				    <h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; width: 100%; font-size: 16px !important; text-align: center; padding: 15px 15px; margin: 0 -15px;">Located near Center Court</h2>
+    				    
+    				    
 <h3 style="text-align: center; max-width: 600px; margin: 0 auto; font-weight: normal; letter-spacing: 1px; line-height: 1.5em; margin-top: 1em;">Now located by the <strong>Parking Garage entrance</strong></h3>
 <ul id="services_list" class="clearfix">
 <li style="background-position: center -1219px;">Stroller, wheelchair &amp; scooter rentals</li>
