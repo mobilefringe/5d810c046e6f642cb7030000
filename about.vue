@@ -13,7 +13,7 @@
         		</div>	<!--page_header ends-->
         		
                 <div class="site_container">
-    				<div class="pages_content">
+    				<div class="pages_content about_content">
     				    <div>
     				        <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827247000/history.png" alt="Northgate Shopping Centre's historic timeline.">
     				    </div>
