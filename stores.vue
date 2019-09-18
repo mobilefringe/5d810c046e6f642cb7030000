@@ -113,13 +113,52 @@
                     }
                     
                     this.dataLoaded = true;
+                    
+                    this.query = this.$route.query.category
+                    if(this.query == "dining_full_service"){
+                      this.selectedCat = "Dining Full Service";
+                      this.filterByCategory;
+                    } else {
+                        this.selectedCat = "All";
+                        this.filteredStores = this.allStores;
+                    }
                 });
             },
+            watch: {
+                $route: function() {
+                    this.query = this.$route.query.category
+                    if(this.query == "dining_full_service"){
+                      this.selectedCat = "Dining Full Service";
+                      this.filterByCategory;
+                    } else {
+                        this.selectedCat = "All";
+                        this.filteredStores = this.allStores;
+                    }    
+                },
+                selectedCat: function() {
+                    this.$nextTick(function() {
+                        Vue.prototype.$redrawVueMasonry();
+                    });    
+                },
+                // windowWidth: function() {
+                //     if (this.windowWidth <= 768) {
+                //         this.mobile_store = true;
+                //     } else {
+                //         this.mobile_store = false;
+                //     }
+                // }
+            }
             computed: {
                 ...Vuex.mapGetters([
                     'property',
                     'findRepoByName',
-                    'processedStores'
+                    'processedStores',
+                    
+                    'processedCategories',
+                    'storesByAlphaIndex',
+                    'storesByCategoryName',
+                    'findCategoryById',
+                    'findCategoryByName'
                 ]),
                 allStores() {
                     var store_list = [];
@@ -137,6 +176,38 @@
                     });
                     return store_list
                 }
+                
+                dropDownCats() {
+                    var vm = this;
+                    var cats = _.filter(this.processedCategories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });
+                    cats = _.map(cats, 'name');
+                    cats.unshift('All');
+                    return cats;
+                },
+                filterByCategory() {
+                    category_id = this.selectedCat;
+                    if (category_id == "All" || category_id == null || category_id == undefined) {
+                        category_id = "All";
+                    } else {
+                        category_id = this.findCategoryByName(category_id).id;
+                    }
+
+                    if (category_id == "All") {
+                        this.filteredStores = this.allStores;
+                    } else {
+                        var find = this.findCategoryById;
+                        var filtered = _.filter(this.allStores, function(o) {
+                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                        });
+                        this.filteredStores = filtered;
+                    }
+                    var el = document.getElementById("selectByCat");
+                    if(el) {
+                        el.classList.remove("open");
+                    }
+                }
+                
+                
             },
             methods: {
                 loadData: async function() {
