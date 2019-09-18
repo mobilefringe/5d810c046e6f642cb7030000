@@ -122,9 +122,12 @@
         		        <h5 class="home_page_subtitle center caps">Follow us on</h5>
         		        <h3 class="home_page_title second caps">instagram</h3>
         		    </div>
-        		    <div class="row">
         		    
-        		        <div class="row hidden-xs margin_60">
+        		    <!--<div class="row">-->
+        		    <div>
+        		    
+        		        <!--<div class="row hidden-xs margin_60">-->
+        		        <div class="hidden-xs margin_60">
                             <div class="">
                                 <div class="insta-feed-container">
                                     <div class="insta-feed-image " v-for="(item, index) in instaFeed">
