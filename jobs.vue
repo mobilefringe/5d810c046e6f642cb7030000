@@ -79,14 +79,17 @@
                     var temp_promo = [];
                     var temp_job = [];
                     _.forEach(this.processedJobs, function(value, key) {
-                        if (value.store != null && value.store != undefined) {
-                            value.store_name = value.store.name;
-                        } else if (value.store == null || value.store == undefined) {
-                            value.store = {};
-                            value.store_name = property_name;
+                        var today = moment.tz(this.timezone).format();
+                        var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
+                        if (today >= showOnWebDate) {
+                            if (value.store != null && value.store != undefined) {
+                                value.store_name = value.store.name;
+                            } else if (value.store == null || value.store == undefined) {
+                                value.store = {};
+                                value.store_name = property_name;
+                            }
+                            temp_promo.push(value);
                         }
-                        
-                        temp_promo.push(value);
                     });
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
