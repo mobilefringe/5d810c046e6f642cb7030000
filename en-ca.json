@@ -19,7 +19,6 @@
         "contact" : "Contact Us",
         
         "programs" : "Programs",
-        "scoop" : "Southland Scoop",
         "kids_club" : "Kids Club",
         "mall_info" : "Mall Info",
         "directions": "Directions",
@@ -113,7 +112,6 @@
     },
     "programs_page" : {
         "programs_header" : "Programs",
-        "scoop_title" : "Southland Scoop",
         "kids_club_title" : "Kids Club"
     }, 
     "promos_page": {
