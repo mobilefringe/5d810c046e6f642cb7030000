@@ -56,19 +56,19 @@
                         
 
 
-                        <div id="wheelchair-services">
-                            <h2>Accessibility</h2>
-                                <p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a>.
+    <!--                    <div id="wheelchair-services">-->
+    <!--                        <h2>Accessibility</h2>-->
+    <!--                            <p>Notices of temporary disruption will be posted to the Northgate Shopping Centre website in compliance with Morguard’s obligations under the Accessibility for Ontarians with Disabilities Act. To view a copy of Morguard’s Accessibility Policy please visit our website, at <a href="http://www.morguard.com/accessibility" target="_blank">http://www.morguard.com/accessibility</a>.-->
                                 
-                                To provide feedback regarding Morguard’s Accessibility Policy, please contact us:<br />
-                                <strong>E-mail:</strong> <a href="mailto:accessibility@morguard.com">accessibility@morguard.com</a><br />
-                                <strong>Local:</strong> <a href="tel:+17054728110">705-472-8110</a><br />
-                                <strong>Head Office:</strong> <a href="tel:+19052813800">905-281-3800</a><br />
-                                <strong>Mail:</strong> 55 City Centre Drive, Suite 800, Mississauga, Ontario L5B 1M3</p>
-                            <h2 style="margin-top: 50px;">Strollers, Wheelchairs and Power Scooters</h2>
-                                <p>For your shopping convenience, Single and Double Strollers are available at Guest Services for a fully refundable $20 deposit per device, cash only please. 2 hour limit per rental.  </p>
-                                <p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.
-    </p>
+    <!--                            To provide feedback regarding Morguard’s Accessibility Policy, please contact us:<br />-->
+    <!--                            <strong>E-mail:</strong> <a href="mailto:accessibility@morguard.com">accessibility@morguard.com</a><br />-->
+    <!--                            <strong>Local:</strong> <a href="tel:+17054728110">705-472-8110</a><br />-->
+    <!--                            <strong>Head Office:</strong> <a href="tel:+19052813800">905-281-3800</a><br />-->
+    <!--                            <strong>Mail:</strong> 55 City Centre Drive, Suite 800, Mississauga, Ontario L5B 1M3</p>-->
+    <!--                        <h2 style="margin-top: 50px;">Strollers, Wheelchairs and Power Scooters</h2>-->
+    <!--                            <p>For your shopping convenience, Single and Double Strollers are available at Guest Services for a fully refundable $20 deposit per device, cash only please. 2 hour limit per rental.  </p>-->
+    <!--                            <p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.-->
+    <!--</p>-->
     
                         </div> <!--wheelchair services ends-->
 
