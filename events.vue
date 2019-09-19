@@ -104,10 +104,10 @@
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
     
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568862916000/BackupEvents.png";
                             }
                             if (_.includes(value.event_image2_url_abs, 'missing')) {
-                                value.event_image2_url_abs = "";
+                                value.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568862916000/BackupEvents.png";
                             }
                             
                             temp_event.push(value);
