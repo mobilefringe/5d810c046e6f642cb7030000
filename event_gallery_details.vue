@@ -188,83 +188,32 @@
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
-            props:['locale', "social_media"],
+            
+            props:['id', 'locale'],
+            beforeRouteUpdate(to, from, next) {
+                this.updateCurrentJob(this.id);
+                next();
+            },
             data: function() {
                 return {
                     dataLoaded: false,
-                    show_popup: false,
-                    popup: null,
-                    slickOptions: {
-                        arrows: false,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        cssEase: 'linear',
-                        dots: true,
-                        fade: true,
-                        infinite: true,
-                        slidesToShow: 1,
-                        speed: 1200
-                    },
-                    suggestionAttribute: "name",
-                    storeSearch: null,
-                    
-                    instaOptions: {
-                        arrows: true,
-                        autoplay: true,
-                        autoplaySpeed: 8000,
-                        cssEase: 'linear',
-                        dots: false,
-                        fade: true,
-                        infinite: true,
-                        slidesToShow: 1,
-                        speed: 1000,
-                        nextArrow: '.insta_next',
-                        prevArrow: '.insta_prev'
-                    },
-                    instaFeed: null
+
                 }
             },
             created () {
                 this.loadData().then(response => {
                     console.log(response)
-                    var socialFeed = response[3].data;
-                    var social_feed = socialFeed.social.instagram;
-                    this.instaFeed = _.slice(social_feed, [0], [6]);
-                    this.instaFeed.map(insta => {
-                        if(insta.caption != null){
-                            insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
-                        }
-                    });
-                    console.log(this.instaFeed)
+
                     this.dataLoaded = true;  
                 });
-                // this.loadData().then(response => {
-                //     // this.popup = this.$store.state.popups[0];
-                    
-                //     this.dataLoaded = true;
-                // });
-            },
-            watch : {
-                dataLoaded () {
-                    var viewed = Cookies.get('popup_viewed');
-                    if(this.popup !== null && viewed !== "true") {
-                        Cookies.set('popup_viewed', "true");
-                        viewed = Cookies.get('popup_viewed');
-                        this.show_popup = true;
-                        this.popup.image_url = "//mallmaverick.cdn.speedyrails.net" + this.popup.photo_url;
-                        document.getElementById('popup_backdrop').style.display = "block";
-                    } else {
-                        document.getElementById('popup_backdrop').style.display = "none";
-                    }
-                }
             },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'timezone',
-                    'getPropertyHours',
-                    'getPropertyHolidayHours',
-                    'processedStores'
+                    'findRepoByName',
+                    'processedGalleries',
+                    'findGalleryById',
+                    'findGalleryBySlug'
                 ]),
                 banners () {
                     var banners = [];//this.$store.state.banners;
