@@ -101,28 +101,28 @@
                     
                         <div id="spare-change-div">
                             <h2>Turn Spare Change into a Northgate Gift Card</h2>
-                            <p>It&#8217;s easy to turn your spare change into something you have been wishing for at Northgate!</p>
-                            <h3 style="margin: 60px 0;">This is how you do it:</h3>
+                            <p>Its easy to turn your spare change into something you have been wishing for at Northgate!</p>
+                            <h3>This is how you do it:</h3>
                             <ol id="change-machine" class="clearfix">
                                 <li>Find the Northgate Coin Machine located near Customer Care</li>
-                                <li style="background-position: left -2614px;">Press the green &#8220;Start&#8221; button</li>
-                                <li style="background-position: left -2895px;">Deposit loose coins in the tray</li>
-                                <li style="background-position: left -3178px;">Press &#8220;Print&#8221;</li>
-                                <li style="background-position: left -3426px;">Remove the printed voucher</li>
-                                <li style="background-position: left -3691px;">Redeem your voucher at Customer Care</li>
+                                <li>Press the green &#8220;Start&#8221; button</li>
+                                <li>Deposit loose coins in the tray</li>
+                                <li>Press &#8220;Print&#8221;</li>
+                                <li>Remove the printed voucher</li>
+                                <li>Redeem your voucher at Customer Care</li>
                             </ol>
                         </div> <!--spare change div ends-->
                         
-                        <section class="clearfix" style="background: #f6f6f6; padding: 3em 15px; margin: 0px -15px;">
+                        <section>
                             <div id="important-note-div">
-                                <h2 style="color: #666;">It&#8217;s important to note the following:</h2>
-                                <ul class="clearfix" style="font-family: Helvetica,Arial,sans-serif;">
+                                <h2>It's important to note the following:</h2>
+                                <ul>
                                     <li>You can deposit mixed coins</li>
                                     <li>A minimum of $6.00 is required per transaction</li>
                                     <li>Remember to check the coin reject tray for discarded coins</li>
                                     <li>A $1.00 administration fee is applicable per transaction and is deducted from the total change deposited</li>
                                 </ul>
-                                <p style="color: #666;">The Northgate Change Machine and Guest Services are located inside the parking garage entrance.</p>
+                                <p>The Northgate Change Machine and Guest Services are located inside the parking garage entrance.</p>
                             </div>
                         </section>  <!--important to note the following ends-->
 	
