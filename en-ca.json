@@ -50,8 +50,8 @@
     "contact_page" : {
         "location" : "Location",
         "phone_title" : "Phone",
-        "phone1" : "Customer Service",
-        "phone2" : "Security",
+        "phone1" : "Phone",
+        "phone2" : "Fax",
         "email" : "Email",
         "form_header" : "Stay in touch with us:",
         "form_name" : "Your Name*",
