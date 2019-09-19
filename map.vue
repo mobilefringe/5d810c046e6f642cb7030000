@@ -73,8 +73,7 @@
                             
                         }
                     } else {
-                        this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
-                    }
+                        this.pageBanner = { "image_url": "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568860718000/BackupBanner.png" }
 
                     this.getSVGMap;
                     this.dataLoaded = true;
