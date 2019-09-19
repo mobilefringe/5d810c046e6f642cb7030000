@@ -99,7 +99,7 @@
                         </section> <!--gift cards black background ends-->
                     
                     
-                        <div class="spare-change-div">
+                        <section class="spare-change-div">
                             <h2>Turn Spare Change into a Northgate Gift Card</h2>
                             <p>Its easy to turn your spare change into something you have been wishing for at Northgate!</p>
                             <h3>This is how you do it:</h3>
@@ -134,9 +134,9 @@
                                     </li>
                                 </div>
                             </ol>
-                        </div> <!--spare change div ends-->
+                        </section> <!--spare change div ends-->
                         
-                        <section>
+                        <section class="change-machine-notes">
                             <h2>It's important to note the following:</h2>
                             <ul>
                                 <li>You can deposit mixed coins</li>
