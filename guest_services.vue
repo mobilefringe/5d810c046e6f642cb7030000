@@ -70,7 +70,8 @@
     <!--                            <p>Do you need some assistance getting around? Then visit the Guest Services to rent a wheelchair or electric scooter during your visit to Northgate. Wheel chairs and power scooters require a $20 cash only fully refundable deposit per device, with a 2 hour limit per rental.-->
     <!--</p>-->
     
-                        </div> <!--wheelchair services ends-->
+                        <!--</div> -->
+                        <!--wheelchair services ends-->
 
                         <section class="gift-cards">
                             <div class="gift-card-img-container">
