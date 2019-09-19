@@ -104,10 +104,10 @@
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
     
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1546551307522/eventplaceholder2@2x.png";
+                                value.image_url = "";
                             }
                             if (_.includes(value.event_image2_url_abs, 'missing')) {
-                                value.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1546551307522/eventplaceholder2@2x.png";
+                                value.event_image2_url_abs = "";
                             }
                             
                             temp_event.push(value);
