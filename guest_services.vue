@@ -92,7 +92,7 @@
                             
                                 <div>
                                     <h2>Participating Merchants</h2>
-                                    <p>Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
+                                    <p>Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com" target="_blank">info@northgateshopping.com</a></p>
                                 </div>
                             
                             </div>
