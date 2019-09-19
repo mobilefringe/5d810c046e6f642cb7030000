@@ -74,7 +74,7 @@
                         <!--wheelchair services ends-->
 
                         <section class="gift-cards">
-                            <div class="gift-cards-container">
+                            <div class="gift-cards-content">
                                 
                                 <div class="gift-card-img-container">
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568867655000/GuestServicesGC.png" alt="">
