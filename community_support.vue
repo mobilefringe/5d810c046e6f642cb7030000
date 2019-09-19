@@ -7,7 +7,8 @@
         		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         			<div class="site_container">
         				<div class="header_content caps">
-        					<h1>{{ $t("community_support_page.header") }}</h1>
+        					<!--<h1>{{ $t("events_page.events_header") }}</h1>-->
+        					<h1>Community Support</h1>
         				</div>
         			</div>
         		</div>
@@ -98,7 +99,7 @@
                             
                         }
                     } else {
-                        this.pageBanner = { "image_url": "https://via.placeholder.com/1920x300" }
+                        this.pageBanner = { "image_url": "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568860718000/BackupBanner.png" }
                     }
 
 this.currentPage = response[0].data;
