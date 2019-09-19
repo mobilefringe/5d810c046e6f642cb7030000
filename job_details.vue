@@ -119,7 +119,7 @@
                         } else if (this.currentJob.store == null || this.currentJob.store == undefined) {
                             this.currentJob.store = {};
                             this.currentJob.no_logo = false;
-                            this.currentJob.store_url =  "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568860718000/BackupBanner.png"
+                            this.currentJob.store_url =  ""
                             this.currentJob.store_name = property_name;
                         }
                     } else {
