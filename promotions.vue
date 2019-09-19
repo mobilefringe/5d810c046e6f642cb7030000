@@ -17,6 +17,7 @@
     					    <!--<div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>-->
     					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
 					        <div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>
+					        
     					    <div class="promo_content">
     					        <p class="promo_title" v-if="promo.store">{{ promo.store.name }}</p>
     					        <p class="promo_title" v-else>{{ property.name }}</p>
@@ -103,10 +104,10 @@
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
     
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png";
+                                value.image_url = "";
                             }
                             if (_.includes(value.promo_image2_url_abs, 'missing')) {
-                                value.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png";
+                                value.promo_image2_url_abs = "";
                             }
                             
                             temp_promo.push(value);
