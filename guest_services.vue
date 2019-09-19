@@ -104,12 +104,30 @@
                             <p>Its easy to turn your spare change into something you have been wishing for at Northgate!</p>
                             <h3>This is how you do it:</h3>
                             <ol id="change-machine">
-                                <li>Find the Northgate Coin Machine located near Customer Care</li>
-                                <li>Press the green &#8220;Start&#8221; button</li>
-                                <li>Deposit loose coins in the tray</li>
-                                <li>Press &#8220;Print&#8221;</li>
-                                <li>Remove the printed voucher</li>
-                                <li>Redeem your voucher at Customer Care</li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828064000/1.png" alt="1.">
+                                    <p>Find the Northgate Coin Machine located near Customer Care</p>
+                                </li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828071000/2.png" alt="2.">
+                                    <p>Press the green "Start" button</p>
+                                </li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828082000/3.png" alt="3.">
+                                    <p>Deposit loose coins in the tray</p>
+                                </li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828088000/4.png" alt="4.">
+                                    <p>Press "Print"</p>
+                                </li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828094000/5.png" alt="5.">
+                                    <p>Remove the printed voucher</p>
+                                </li>
+                                <li>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827971000/6.png" alt="6.">
+                                    <p>Redeem your voucher at Customer Care</p>
+                                </li>
                             </ol>
                         </div> <!--spare change div ends-->
                         
