@@ -105,10 +105,10 @@
                         this.currentPromo.name_short_2 = _.truncate(this.currentPromo.name_2, { 'length': 21, 'separator': ' ' });
             
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                            this.currentPromo.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png"
+                            this.currentPromo.promo_image_url_abs = ""
                         }
                         if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
-                            this.currentPromo.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png"
+                            this.currentPromo.promo_image2_url_abs = ""
                         }
                            
                     } else {
