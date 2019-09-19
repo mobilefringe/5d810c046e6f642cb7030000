@@ -94,6 +94,8 @@
                     var temp_promo = [];
                     var temp_job = [];
                     _.forEach(this.processedPromos, function(value, key) {
+                        console.log(temp_promo)
+                        
                         var today = moment.tz(this.timezone).format();
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
@@ -102,20 +104,19 @@
                             value.description_short = _.truncate(value.description, { 'length': 60, 'separator': ' ' });
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
                             
-                            if (value.promotionable_type == "Store"){
-                                if (_.includes(value.image_url, 'missing')) {
+                            if (_.includes(value.image_url, 'missing')) {
+                                if (value.promotionable_type == "Store") {
                                     value.image_url = "";
+                                } else {
+                                value.image_url = "this.property.default_logo_url";
+                            }
                                 }
                                 if (_.includes(value.promo_image2_url_abs, 'missing')) {
                                     value.promo_image2_url_abs = "";
                                 }
-                            } else {
-                                value.image_url = "this.property.default_logo_url";
                             }
-                                
                             
-                            
-                            
+                        
                          
                             
                             temp_promo.push(value);
