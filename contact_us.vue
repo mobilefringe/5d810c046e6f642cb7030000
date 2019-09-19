@@ -10,6 +10,18 @@
         				</div>
         			</div>
         		</div>
+        		
+        		<div class="page_header" v-else="!pageBanner">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        					<h1>Contact Us</h1>
+        				</div>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		
         		<div class="site_container">
                     <div class="contact_container">
 					    <div class="contact_map">
