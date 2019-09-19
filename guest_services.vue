@@ -22,32 +22,32 @@
                             <h3>Now located by the <strong>Parking Garage entrance</strong></h3>
                             <ul id="services_list">
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828057000/wheelchair2.png" alt="">
                                     <p>Stroller, wheelchair & scooter rentals</p>
                                 </li>
                                 
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828032000/chargingstation.png" alt="">
                                     <p>Portable cell phone chargers</p>
                                 </li>
                                 
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827067000/icon2.png" alt="">
                                     <p>Shopping Centre Information</p>
                                 </li>
                                 
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828040000/giftcard.png" alt="">
                                     <p>Northgate Gift Cards</p>
                                 </li>
                                 
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827980000/security.png" alt="">
                                     <p>Security Services</p>
                                 </li>
                                 
                                 <li>
-                                    <img>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568828048000/lostandfound.png" alt="">
                                     <p>Lost & Found</p>
                                 </li>
                                 
