@@ -102,7 +102,7 @@
                             this.currentEvent.image_url = ""
                         }
                         if(_.includes(this.currentEvent.promo_image2_url_abs, 'missing')) {
-                            this.currentEvent.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568862916000/BackupEvents.png"
+                            this.currentEvent.promo_image2_url_abs = ""
                         }
                            
                     } else {
