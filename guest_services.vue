@@ -103,7 +103,7 @@
                             <h2>Turn Spare Change into a Northgate Gift Card</h2>
                             <p>Its easy to turn your spare change into something you have been wishing for at Northgate!</p>
                             <h3>This is how you do it:</h3>
-                            <ol id="change-machine" class="clearfix">
+                            <ol id="change-machine">
                                 <li>Find the Northgate Coin Machine located near Customer Care</li>
                                 <li>Press the green &#8220;Start&#8221; button</li>
                                 <li>Deposit loose coins in the tray</li>
