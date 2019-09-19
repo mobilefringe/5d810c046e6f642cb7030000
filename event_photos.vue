@@ -82,7 +82,10 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'findRepoByName'
+                    'findRepoByName',
+                    'processedGalleries',
+                    'findGalleryById',
+                    'findGalleryBySlug'
                 ])
             },
             methods: {
