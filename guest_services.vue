@@ -72,7 +72,7 @@
     
                         </div> <!--wheelchair services ends-->
 
-                        <section class="clear fix" style="background: black; padding: 2em 15px; margin: 0px -15px;">
+                        <section class="gift-cards">
                             <div id="gift-cards-div" class="border-bottom">
                                 <h2 id="gift-cards">Gift Cards</h2>
                                     <p style="color: white;"><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
