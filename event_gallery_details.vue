@@ -377,12 +377,24 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                onOptionSelect(option) {
-                    this.$nextTick(function() {
-                        this.storeSearch = ""
-                    });
-                    this.$refs.mapplic_ref.showLocation(option.svgmap_region);
+                
+                
+                
+                
+                          
+                updateCurrentJob (id) {
+                    this.currentJob = this.findJobBySlug(id);
+                    console.log(this.currentJob)
+                    if (this.currentJob != null || this.currentJob != undefined){
+                        //customize json
+                    } else {
+                        this.$router.replace({ name: '404'});
+                    }
                 },
+
+                
+                
+                
             }
         })
     })
