@@ -15,8 +15,7 @@
     					<div class="promo_container" v-if="promos.length > 0" v-for="promo in promos" :key="promo.id">
     					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
     					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
-    					    <!--<div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>-->
-					        <!--<div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>-->
+
 					        
     					    <div class="promo_content">
     					        <p class="promo_title" v-if="promo.store">{{ promo.store.name }}</p>
