@@ -101,10 +101,10 @@
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
     
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1546551307522/eventplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png";
                             }
                             if (_.includes(value.promo_image2_url_abs, 'missing')) {
-                                value.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1546551307522/eventplaceholder2@2x.png";
+                                value.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568863486000/BackupPromotion.png";
                             }
                             
                             temp_promo.push(value);
