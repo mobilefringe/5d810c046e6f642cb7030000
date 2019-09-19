@@ -86,12 +86,12 @@
                             
                             <div id="benefits">
                                 <div>
-                                    <h2 style="color: #f10044;">Corporate Benefits</h2>
+                                    <h2>Corporate Benefits</h2>
                                     <p>Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
                                 </div>
                             
                                 <div>
-                                    <h2 style="color: #f10044;">Participating Merchants</h2>
+                                    <h2>Participating Merchants</h2>
                                     <p>Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com">info@northgateshopping.com</a></p>
                                 </div>
                             
