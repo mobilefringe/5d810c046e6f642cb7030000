@@ -93,7 +93,8 @@
                     try {
                         let results = await Promise.all([
                             this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }),
-                            this.$store.dispatch("getData", "repos")]);
+                            this.$store.dispatch("getData", "repos")]),
+                             this.$store.dispatch("getData", "fashions")])
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
