@@ -109,11 +109,15 @@
                             this.currentJob.store_website = this.currentJob.store.website
                         
                             // STORE LOGO
+                            console.log(currentJob)
                             if (_.includes(this.currentJob.store.store_front_url_abs, 'missing')) {
                                 this.currentJob.no_logo = true
-                            } else {
+                            } else if {
                                 this.currentJob.no_logo = false
                                 this.currentJob.store_url = this.currentJob.store.image_url;
+                                
+                            } else if {
+                                
                             }
 
                         } else if (this.currentJob.store == null || this.currentJob.store == undefined) {
