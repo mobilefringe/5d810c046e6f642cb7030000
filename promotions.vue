@@ -101,13 +101,22 @@
                             value.name_short_2 = _.truncate(value.name_2, { 'length': 30, 'separator': ' ' });
                             value.description_short = _.truncate(value.description, { 'length': 60, 'separator': ' ' });
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
-    
-                            if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "";
+                            
+                            if (value.promotionable_type == "Store"){
+                                if (_.includes(value.image_url, 'missing')) {
+                                    value.image_url = "";
+                                }
+                                if (_.includes(value.promo_image2_url_abs, 'missing')) {
+                                    value.promo_image2_url_abs = "";
+                                }
+                            } else {
+                                value.image_url = "this.property.default_logo_url";
                             }
-                            if (_.includes(value.promo_image2_url_abs, 'missing')) {
-                                value.promo_image2_url_abs = "";
-                            }
+                                
+                            
+                            
+                            
+                         
                             
                             temp_promo.push(value);
                         }
