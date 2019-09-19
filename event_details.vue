@@ -99,7 +99,7 @@
                         this.currentEvent.name_short_2 = _.truncate(this.currentEvent.name_2, { 'length': 21, 'separator': ' ' });
             
                         if(_.includes(this.currentEvent.image_url, 'missing')) {
-                            this.currentEvent.image_url = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568862916000/BackupEvents.png"
+                            this.currentEvent.image_url = ""
                         }
                         if(_.includes(this.currentEvent.promo_image2_url_abs, 'missing')) {
                             this.currentEvent.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568862916000/BackupEvents.png"
