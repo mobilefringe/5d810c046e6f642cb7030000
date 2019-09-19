@@ -148,14 +148,23 @@
                     currentPage: null
                 }
             },
-            created() {
-                // this.updateCurrentPage(this.id);
+            created(){
+                this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Guest Services Banner');
+                    if (temp_repo) {
+                        try {
+                            this.pageBanner = temp_repo.images[0];
+                        } catch(e) {
+                            
+                        }
+                    } else {
+                        this.pageBanner = { "image_url": "//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568860718000/BackupBanner.png" }
+                    }
+                    
+                    this.updatecurrentEvent(this.id);
+                    this.dataLoaded = true;
+                });
             },
-            // watch: {
-            //     $route: function () {
-            //         this.updateCurrentPage(this.$route.params.id);
-            //     }
-            // },
             computed: {
                 ...Vuex.mapGetters([
                     'property'
