@@ -132,16 +132,14 @@
                         </div> <!--spare change div ends-->
                         
                         <section>
-                            <div id="important-note-div">
-                                <h2>It's important to note the following:</h2>
-                                <ul>
-                                    <li>You can deposit mixed coins</li>
-                                    <li>A minimum of $6.00 is required per transaction</li>
-                                    <li>Remember to check the coin reject tray for discarded coins</li>
-                                    <li>A $1.00 administration fee is applicable per transaction and is deducted from the total change deposited</li>
-                                </ul>
-                                <p>The Northgate Change Machine and Guest Services are located inside the parking garage entrance.</p>
-                            </div>
+                            <h2>It's important to note the following:</h2>
+                            <ul>
+                                <li>You can deposit mixed coins</li>
+                                <li>A minimum of $6.00 is required per transaction</li>
+                                <li>Remember to check the coin reject tray for discarded coins</li>
+                                <li>A $1.00 administration fee is applicable per transaction and is deducted from the total change deposited</li>
+                            </ul>
+                            <p>The Northgate Change Machine and Guest Services are located inside the parking garage entrance.</p>
                         </section>  <!--important to note the following ends-->
 	
 
