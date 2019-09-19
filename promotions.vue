@@ -115,6 +115,7 @@
                     });
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
+                    
                 },
             },
             methods: {
