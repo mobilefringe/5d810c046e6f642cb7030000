@@ -74,17 +74,19 @@
                         <!--wheelchair services ends-->
 
                         <section class="gift-cards">
-                            <div class="gift-card-img-container">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568867655000/GuestServicesGC.png" alt="">
+                            <div class="gift-cards-container">
                                 
-                            </div>
-                        
-                            <div id="gift-cards-div" class="border-bottom">
-                                <h2>Gift Cards</h2>
-                                    <p><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
-                            </div>
+                                <div class="gift-card-img-container">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568867655000/GuestServicesGC.png" alt="">
+                                    
+                                </div>
                             
-                            
+                                <div id="gift-cards-div" class="border-bottom">
+                                    <h2>Gift Cards</h2>
+                                        <p><strong>Available at Guest Services.</strong> Take the guesswork out of finding that perfect gift for that special person. For any occasion, all year round you can give the gift of Northgate with our Gift Cards. Northgate Gift Cards are available in any denomination of Mall Money up to $500, and can be used at all participating Northgate Merchants. This gift card is issued by PACE Savings &amp; Credit Union Limited.</p>
+                                </div>
+                                
+                                
                                 <div>
                                     <h2>Corporate Benefits</h2>
                                     <p>Northgate Gift Cards make for an excellent way for your business or organization to recognize individual staff achievements as well as larger group accolades. In addition, they make for dynamic workplace incentives. Call 705-472-8110 today to learn more about the benefits of corporate orders.</p>
@@ -94,8 +96,8 @@
                                     <h2>Participating Merchants</h2>
                                     <p>Currently, over 90% of the stores in Northgate Shopping Centre accept Mall Money offered through the Gift Card, however, retailer participation is on a voluntary basis. Please inquire prior to making your purchase to ensure the store accepts Northgate Gift Cards. <a href="mailto:info@northgateshopping.com" target="_blank">info@northgateshopping.com</a></p>
                                 </div>
-                            
-                            
+                                
+                            </div>
                         </section> <!--gift cards black background ends-->
                     
                     
