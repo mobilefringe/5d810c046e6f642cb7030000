@@ -367,10 +367,8 @@
                 loadData: async function() {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch("getData", "banners"), 
-                            this.$store.dispatch("getData", "feature_items"), 
-                            this.$store.dispatch("getData", "popups"),
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://northgate.mallmaverick.com/api/v4/northgate/social.json" })
+                            this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch("getData", "fashions")
                         ]);
                         return results;
                     } catch (e) {
