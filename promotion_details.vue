@@ -106,7 +106,7 @@
                         this.currentPromo.name_short_2 = _.truncate(this.currentPromo.name_2, { 'length': 21, 'separator': ' ' });
             
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                            this.currentPromo.promo_image_url_abs = "this.currentPromo.store.store_front_url"
+                            this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url;
                         }
                         if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
                             this.currentPromo.promo_image2_url_abs = ""
