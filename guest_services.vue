@@ -99,7 +99,7 @@
                         </section> <!--gift cards black background ends-->
                     
                     
-                        <div id="spare-change-div">
+                        <div class="spare-change-div">
                             <h2>Turn Spare Change into a Northgate Gift Card</h2>
                             <p>Its easy to turn your spare change into something you have been wishing for at Northgate!</p>
                             <h3>This is how you do it:</h3>
