@@ -144,32 +144,15 @@
                             </slick>
                             <div class="insta_next"></div>
                         </div>
-                        
-        		        <!--<div v-for="feature in programs" class="col-sm-6">-->
-        		        <!--    <div class="feature_item_container programs" :class="feature.program_class">-->
-                  <!--  			<div class="feature_item_info">-->
-                  <!--  				<div class="feature_item_content">-->
-                  <!--  					<p>{{ feature.name }}</p>-->
-                  <!--  					<h3>{{ feature.description }}</h3>-->
-                  <!--  					<a :href="feature.url" :aria-label="feature.name">-->
-                  <!--      					<div class="feature_item_more animated_btn">View Details</div>-->
-                  <!--      				</a>-->
-                  <!--  				</div>-->
-                  <!--  			</div>-->
-                  <!--  	    </div>-->
-        		        <!--</div>-->
         		    </div>
         		</div>
-        		
-        		
-       
         	</div>
         </transition>    		
 	</div>
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
+    define(["Vue", "vuex", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz, SearchComponent) {
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
