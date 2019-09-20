@@ -85,50 +85,23 @@
                         	    </div>
                         	    <div v-else class="feature_item_container">
                         	        
-                            			<img :src="feature.image_url" :alt="feature.name">
-                            			<div class="feature_item_info">
-                            			    <h3>Follow Us</h3>
-                            			    <div class="social_icons">
-                                                <span v-for="item in social_media">
-                                                    <a :href="item.url" target="_blank">
-                                                        <p class="accessibility">{{ item.name }}</p>
-                                                        <i :class="item.iconClass" aria-hidden="true"></i>
-                                                    </a>
-                                                </span>
-                                            </div>
-                            			    
-                            			</div>
-                            			
-                            			
-                            	
+                        			<img :src="feature.image_url" :alt="feature.name">
+                        			<div class="feature_item_info">
+                        			    <h3>Follow Us</h3>
+                        			    <div class="social_icons">
+                                            <span v-for="item in social_media">
+                                                <a :href="item.url" target="_blank">
+                                                    <p class="accessibility">{{ item.name }}</p>
+                                                    <i :class="item.iconClass" aria-hidden="true"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                        			</div>
                         	    </div>
                             </div>
                         </div>
                     </div>
-                    <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
-                    <!--    <div v-masonry-tile class="item">-->
-                    <!--        <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-                    <!--    	    <div v-if="feature.name && feature.description" class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info" >-->
-                    <!--        				<div class="feature_item_content">-->
-                    <!--        					<p>{{ feature.name }}</p>-->
-                    <!--        					<h3>{{ feature.description }}</h3>-->
-                    <!--        					<div class="feature_item_more" :aria-label="feature.name">View Details</div>-->
-                    <!--        				</div>-->
-                    <!--        			</div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--    	    <div v-else class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info"></div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+
                     
                     
                     <div class="home_page_title_container">
@@ -138,7 +111,6 @@
         		    
         		    <!--<div class="row">-->
         		    <div>
-        		    
         		        <!--<div class="row hidden-xs margin_60">-->
         		        <div class="hidden-xs margin_60">
                             <div class="">
