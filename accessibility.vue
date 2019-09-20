@@ -14,7 +14,7 @@
         		</div>	<!--page_header ends-->
         		
         		<section class="accessibility_container site_container">
-        		    <div>
+        		    <div class="wheelchair_image">
         		        <img :src="currentPage.image_url" alt="">
         		    </div>
         		    
