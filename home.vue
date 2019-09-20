@@ -176,7 +176,7 @@
                     suggestionAttribute: "name",
                     storeSearch: null,
                     
-                    search_result : null,
+                    
                     
                     instaOptions: {
                         arrows: true,
@@ -403,7 +403,7 @@
                         this.storeSearch = ""
                     });
                     this.$refs.mapplic_ref.showLocation(option.svgmap_region);
-                }
+                },
             }
         })
     })
