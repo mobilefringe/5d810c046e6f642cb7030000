@@ -18,7 +18,7 @@
         		        <img src="currentPage.image_url" alt="">
         		    </div>
         		    
-        		    <div class="site_container">
+        		    <div>
         				<div class="pages_content about_content">
         				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
             
