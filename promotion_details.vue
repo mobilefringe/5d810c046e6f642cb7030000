@@ -102,7 +102,7 @@
                     this.currentPromo = this.findPromoBySlug(id);
                     console.log(this.currentPromo)
                     
-                    // var vm = this;
+                    var vm = this;
                     
                     
                     if (this.currentPromo != null || this.currentPromo != undefined){
