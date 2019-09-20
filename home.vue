@@ -408,7 +408,7 @@
                 onOptionSelect(option) {
                     this.search_result = "";
                     this.$router.push("/stores/"+option.slug);
-                },
+                }
             }
         })
     })
