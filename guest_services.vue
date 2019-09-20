@@ -12,9 +12,11 @@
         			</div>
         		</div>	<!--page_header ends-->
         		
+ 
+        		
                 <div>
     				<div class="pages_content">
-    				    <h2 style="background: #f9f9f9; color: #666; border-bottom: 1px solid #eee; width: 100%; font-size: 16px !important; text-align: center; padding: 15px 15px; text-transform: uppercase; margin: 0 -15px;">Located near Center Court</h2>
+    				    
     				    
     				    
                         
