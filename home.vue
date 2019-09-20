@@ -176,6 +176,8 @@
                     suggestionAttribute: "name",
                     storeSearch: null,
                     
+                    search_result : null,
+                    
                     instaOptions: {
                         arrows: true,
                         autoplay: true,
@@ -401,6 +403,11 @@
                         this.storeSearch = ""
                     });
                     this.$refs.mapplic_ref.showLocation(option.svgmap_region);
+                },
+                
+                onOptionSelect(option) {
+                    this.search_result = "";
+                    this.$router.push("/stores/"+option.slug);
                 },
             }
         })
