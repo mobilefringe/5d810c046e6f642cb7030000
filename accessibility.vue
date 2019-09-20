@@ -13,12 +13,20 @@
         			</div>
         		</div>	<!--page_header ends-->
         		
-                <div class="site_container">
-    				<div class="pages_content about_content">
-    				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
-        
-                    </div>
-                </div><!--page content ends-->
+        		<div>
+        		    <div>
+        		        <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827960000/wheelchair.png" alt="">
+        		    </div>
+        		    
+        		    <div class="site_container">
+        				<div class="pages_content about_content">
+        				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
+            
+                        </div>
+                    </div><!--page content ends-->
+        		</div>
+        		
+                
                     
                     <!--<section style="background: #ededed; padding: 2em 15px; margin: 0px -15px;">-->
                     <!--    <div class="site_container">-->
