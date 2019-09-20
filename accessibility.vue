@@ -13,7 +13,7 @@
         			</div>
         		</div>	<!--page_header ends-->
         		
-        		<section class="accessibility">
+        		<section class="accessibility site_container">
         		    <div>
         		        <img src="currentPage.image_url" alt="">
         		    </div>
