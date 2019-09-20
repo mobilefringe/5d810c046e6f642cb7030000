@@ -179,7 +179,8 @@
             data: function() {
                 return {
                     dataLoaded: true,
-                    currentPage: null
+                    currentPage: null,
+                    pageBanner : null,
                 }
             },
             created(){
