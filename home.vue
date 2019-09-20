@@ -43,7 +43,7 @@
         		            <h3 class="home_page_title caps">{{ property.name }}</h3>
             		    </div>
             		    <div class="margin_30">
-                            <div class="map_search_container" v-if="">
+                            <div class="map_search_container" v-if="isMobile">
                                 
                                 <search-component v-model="storeSearch" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" :placeholder="$t('stores_page.find_your_store')">
                                     <template slot="item" scope="option">
