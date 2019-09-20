@@ -5,6 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
         		<div class="banner_div">
         			<div class="home_banner_container">
+        			
         			    <!--if multiple home hero banners-->
         				<slick v-if="banners.length > 1" ref="slick" :options="slickOptions">
         					<div class="" v-for="banner in banners" v-if="banners">
@@ -16,7 +17,6 @@
         						</div>
         					</div>
         				</slick>
-        				
         				
         				<!--if only 1 banner-->
     					<div class="" v-for="banner in banners" v-if="banners">
