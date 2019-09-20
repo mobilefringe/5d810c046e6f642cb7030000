@@ -12,19 +12,18 @@
         		</div>
         		<div class="site_container page_content">
         		    <transition-group name="list" tag="div">
-    					<div class="event_container" v-if="events.length > 0" v-for="event in events" :key="event.id">
-    					    <div class="event_img" v-if="locale=='en-ca'" v-lazy:background-image="event.image_url"></div>
-    					    <div class="event_img" v-else v-lazy:background-image="event.event_image2_url_abs"></div>
-    					    
-    					    <div class="event_content">
-    					        <p class="event_title">
-    					            <span v-if="isMultiDay(event)">{{ event.start_date | moment("MMM D", timezone)}} - {{ event.end_date | moment("MMM D", timezone)}}</span>
-    					            <span v-else>{{ event.start_date | moment("MMM D", timezone)}}</span>
+    					<div class="promo_container" v-if="events.length > 0" v-for="promo in events" :key="promo.id">
+    					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
+    					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
+    					    <div class="promo_content">
+    					        <p class="promo_title">
+    					            <span v-if="isMultiDay(promo)">{{ promo.start_date | moment("MMM D", timezone)}} - {{ promo.end_date | moment("MMM D", timezone)}}</span>
+    					            <span v-else>{{ promo.start_date | moment("MMM D", timezone)}}</span>
     					        </p>
-    					        <h3 class="center caps" v-if="locale=='en-ca'">{{ event.name_short }}</h3>
-    							<h3 class="center caps" v-else>{{ event.name_short_2 }}</h3>
-    							<router-link :to="'/events/'+ event.slug">
-    							   <div class="event_learn_more animated_btn">{{ $t("events_page.read_more") }}</div>
+    					        <h3 class="center caps" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
+    							<h3 class="center caps" v-else>{{ promo.name_short_2 }}</h3>
+    							<router-link :to="'/events/'+ promo.slug">
+    							   <div class="promo_learn_more animated_btn">{{ $t("events_page.read_more") }}</div>
     						    </router-link>
     					    </div>
     					</div>
@@ -32,7 +31,7 @@
     				</transition-group>
         			<div class="row" v-if="events.length > 0">
                         <div class="col-md-12">
-                            <button class="animated_btn event_load_more" v-if="!noMoreEvents" @click="handleButton">Load More</button>
+                            <button class="animated_btn promo_load_more" v-if="!noMoreEvents" @click="handleButton">Load More</button>
                             <p v-if="noEvents">{{$t("events_page.no_more_event_message")}}</p>
                         </div>
                     </div>
@@ -119,32 +118,32 @@
                 },
                 
                 
-                // if (this.currentJob != null || this.currentJob != undefined){
-                //     var property_name = this.property.name
-                //     if (this.currentJob.store != null && this.currentJob.store != undefined){
-                //         this.currentJob.store_name = this.currentJob.store.name;
-                //         this.currentJob.store_phone = this.currentJob.store.phone
-                //         this.currentJob.store_website = this.currentJob.store.website
+                if (this.currentJob != null || this.currentJob != undefined){
+                    var property_name = this.property.name
+                    if (this.currentJob.store != null && this.currentJob.store != undefined){
+                        this.currentJob.store_name = this.currentJob.store.name;
+                        this.currentJob.store_phone = this.currentJob.store.phone
+                        this.currentJob.store_website = this.currentJob.store.website
                     
-                //         // STORE LOGO
-                //         if (_.includes(this.currentJob.store.store_front_url_abs, 'missing')) {
-                //             this.currentJob.no_logo = true
-                //         }
+                        // STORE LOGO
+                        if (_.includes(this.currentJob.store.store_front_url_abs, 'missing')) {
+                            this.currentJob.no_logo = true
+                        }
 
-                //         else {
-                //             this.currentJob.no_logo = false
-                //             this.currentJob.store_url = this.currentJob.store.image_url;
-                //         }
+                        else {
+                            this.currentJob.no_logo = false
+                            this.currentJob.store_url = this.currentJob.store.image_url;
+                        }
 
-                //     } else if (this.currentJob.store == null || this.currentJob.store == undefined) {
-                //         this.currentJob.store = {};
-                //         this.currentJob.no_logo = false;
-                //         this.currentJob.store_url =  this.property.default_logo_url;
-                //         this.currentJob.store_name = property_name;
-                //     }
-                // } else {
-                //     this.$router.replace({ name: '404'});
-                // }
+                    } else if (this.currentJob.store == null || this.currentJob.store == undefined) {
+                        this.currentJob.store = {};
+                        this.currentJob.no_logo = false;
+                        this.currentJob.store_url =  this.property.default_logo_url;
+                        this.currentJob.store_name = property_name;
+                    }
+                } else {
+                    this.$router.replace({ name: '404'});
+                }
                 
                 
             },
@@ -156,10 +155,10 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                isMultiDay(event) {
+                isMultiDay(promo) {
                     var timezone = this.timezone
-                    var start_date = moment(event.start_date).tz(timezone).format("MM-DD-YYYY");
-                    var end_date = moment(event.end_date).tz(timezone).format("MM-DD-YYYY");
+                    var start_date = moment(promo.start_date).tz(timezone).format("MM-DD-YYYY");
+                    var end_date = moment(promo.end_date).tz(timezone).format("MM-DD-YYYY");
                     if (start_date === end_date) {
                         return false
                     } else {
