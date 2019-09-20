@@ -16,7 +16,7 @@
 		
 		
 		
-        		<div class="site_container inside_page_content page_content">
+        		<div class="site_container inside_page_content page_content leasing-content">
         			<div class="row">
         			    <div class="col-md-12">
                             <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
