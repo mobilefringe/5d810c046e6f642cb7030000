@@ -185,7 +185,7 @@
             },
             created(){
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Guest Services Banner');
+                    var temp_repo = this.findRepoByName('Events Banner');
                     if (temp_repo) {
                         try {
                             this.pageBanner = temp_repo.images[0];
@@ -195,9 +195,30 @@
                     } else {
                         this.pageBanner = { "image_url": "" }
                     }
+
+                    this.currentPage = response[0].data;
+                        if (response[0].data.subpages) {
+                            this.subPages = response[0].data.subpages;
+                        }
+                        
+                        this.dataLoaded = true;
+
+                    });
+                
+                
+                // this.loadData().then(response => {
+                //     var temp_repo = this.findRepoByName('Guest Services Banner');
+                //     if (temp_repo) {
+                //         try {
+                //             this.pageBanner = temp_repo.images[0];
+                //         } catch(e) {
+                            
+                //         }
+                //     } else {
+                //         this.pageBanner = { "image_url": "" }
+                //     }
                     
-                    this.updatecurrentEvent(this.id);
-                    this.dataLoaded = true;
+
                 });
             },
             computed: {
