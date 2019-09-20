@@ -99,12 +99,14 @@
                     console.log(property_name)
                     console.log(this)
                     
+                    var vm = this;
+                    
                     if (this.currentEvent != null || this.currentEvent != undefined){
                         this.currentEvent.name_short = _.truncate(this.currentEvent.name, { 'length': 21, 'separator': ' ' });
                         this.currentEvent.name_short_2 = _.truncate(this.currentEvent.name_2, { 'length': 21, 'separator': ' ' });
             
                         if(_.includes(this.currentEvent.image_url, 'missing')) {
-                            this.currentEvent.image_url = ""
+                            this.currentEvent.image_url = vm.property.default_logo_url
                         }
                         if(_.includes(this.currentEvent.promo_image2_url_abs, 'missing')) {
                             this.currentEvent.promo_image2_url_abs = ""
