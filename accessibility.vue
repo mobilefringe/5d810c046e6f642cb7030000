@@ -15,7 +15,7 @@
         		
         		<section class="accessibility_container site_container">
         		    <div>
-        		        <img src="currentPage.image_url" alt="">
+        		        <img :src="currentPage.image_url" :alt="">
         		    </div>
         		    
         		    <div class="site_container">
