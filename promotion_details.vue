@@ -111,11 +111,16 @@
             
                         // if missing uploaded image, display store logo
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                            this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
+                            if (this.currentPromo.promotionable_type === "Store") {
+                                 this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
+                            }
+                            else {
+                                this.currentPromo.promo_image_url_abs = vm.property.default_logo_url;
+                            }
                         }
-                        if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
-                            this.currentPromo.promo_image2_url_abs = ""
-                        }
+                        // if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
+                        //     this.currentPromo.promo_image2_url_abs = ""
+                        // }
                         
                         // if (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                         //     if (value.promotionable_type == "Store") {
