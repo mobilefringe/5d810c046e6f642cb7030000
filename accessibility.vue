@@ -123,7 +123,7 @@
                 loadData: async function(id) {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-about-us.json" }),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/northgate-accessibility.json" }),
                             this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
