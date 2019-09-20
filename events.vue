@@ -116,6 +116,36 @@
                     _.sortBy(temp_event, [function(o) { return o.start_date; }]);
                     return temp_event;
                 },
+                
+                
+                // if (this.currentJob != null || this.currentJob != undefined){
+                //     var property_name = this.property.name
+                //     if (this.currentJob.store != null && this.currentJob.store != undefined){
+                //         this.currentJob.store_name = this.currentJob.store.name;
+                //         this.currentJob.store_phone = this.currentJob.store.phone
+                //         this.currentJob.store_website = this.currentJob.store.website
+                    
+                //         // STORE LOGO
+                //         if (_.includes(this.currentJob.store.store_front_url_abs, 'missing')) {
+                //             this.currentJob.no_logo = true
+                //         }
+
+                //         else {
+                //             this.currentJob.no_logo = false
+                //             this.currentJob.store_url = this.currentJob.store.image_url;
+                //         }
+
+                //     } else if (this.currentJob.store == null || this.currentJob.store == undefined) {
+                //         this.currentJob.store = {};
+                //         this.currentJob.no_logo = false;
+                //         this.currentJob.store_url =  this.property.default_logo_url;
+                //         this.currentJob.store_name = property_name;
+                //     }
+                // } else {
+                //     this.$router.replace({ name: '404'});
+                // }
+                
+                
             },
             methods: {
                 loadData: async function() {
