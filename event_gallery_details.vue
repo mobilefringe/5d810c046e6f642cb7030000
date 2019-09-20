@@ -202,9 +202,19 @@
             },
             created () {
                 this.loadData().then(response => {
-                    console.log(response)
-
-                    this.dataLoaded = true;  
+                    var temp_repo = this.findRepoByName('Events Banner');
+                    if (temp_repo) {
+                        try {
+                            this.pageBanner = temp_repo.images[0];
+                        } catch(e) {
+                            
+                        }
+                    } else {
+                        this.pageBanner = { "image_url": "" }
+                    }
+                    
+                    this.updatecurrentEvent(this.id);
+                    this.dataLoaded = true;
                 });
             },
             computed: {
