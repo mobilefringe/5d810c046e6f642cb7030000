@@ -43,7 +43,7 @@
         		            <h3 class="home_page_title caps">{{ property.name }}</h3>
             		    </div>
             		    <div class="margin_30">
-                            <div class="map_search_container">
+                            <div class="map_search_container" v-if="">
                                 
                                 <search-component v-model="storeSearch" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" :placeholder="$t('stores_page.find_your_store')">
                                     <template slot="item" scope="option">
@@ -174,6 +174,7 @@
                         slidesToShow: 1,
                         speed: 1200
                     },
+                    isMobile: false,
                     suggestionAttribute: "name",
                     storeSearch: null,
                     
@@ -207,11 +208,9 @@
                     console.log(this.instaFeed)
                     this.dataLoaded = true;  
                 });
-                // this.loadData().then(response => {
-                //     // this.popup = this.$store.state.popups[0];
-                    
-                //     this.dataLoaded = true;
-                // });
+                window.addEventListener("resize", this.getWindowWidth);
+                  //Init
+                  this.getWindowWidth();
             },
             watch : {
                 dataLoaded () {
@@ -402,6 +401,14 @@
                         this.storeSearch = ""
                     });
                     this.$refs.mapplic_ref.showLocation(option.svgmap_region);
+                },
+                getWindowWidth(event) {
+                  var windowWidth = window.innerWidth;
+                  if (windowWidth <= 768) {
+                    this.isMobile = true;
+                  } else {
+                    this.isMobile = false;
+                  }
                 },
             }
         })
