@@ -94,6 +94,11 @@
                 },
                 updatecurrentEvent (id) {
                     this.currentEvent = this.findEventBySlug(id);
+                    
+                    var property_name = this.property.name;
+                    console.log(property_name)
+                    console.log(this)
+                    
                     if (this.currentEvent != null || this.currentEvent != undefined){
                         this.currentEvent.name_short = _.truncate(this.currentEvent.name, { 'length': 21, 'separator': ' ' });
                         this.currentEvent.name_short_2 = _.truncate(this.currentEvent.name_2, { 'length': 21, 'separator': ' ' });
