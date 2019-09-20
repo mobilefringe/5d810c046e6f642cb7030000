@@ -100,16 +100,30 @@
                 },
                 updateCurrentPromo (id) {
                     this.currentPromo = this.findPromoBySlug(id);
+                    console.log(this.currentPromo)
+                    
+                    // var vm = this;
+                    
+                    
                     if (this.currentPromo != null || this.currentPromo != undefined){
                         this.currentPromo.name_short = _.truncate(this.currentPromo.name, { 'length': 21, 'separator': ' ' });
                         this.currentPromo.name_short_2 = _.truncate(this.currentPromo.name_2, { 'length': 21, 'separator': ' ' });
             
-                        if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                            this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
-                        }
-                        if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
-                            this.currentPromo.promo_image2_url_abs = ""
-                        }
+                        // if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
+                        //     this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
+                        // }
+                        // if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
+                        //     this.currentPromo.promo_image2_url_abs = ""
+                        // }
+                        
+                        // if (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
+                        //     if (value.promotionable_type == "Store") {
+                        //         this.currentPromo.promo_image_url_abs = value.store.image_url;
+                        //     } else {
+                        //         // value.image_url = value.store_front_url;
+                        //         value.image_url = vm.property.default_logo_url;
+                        //     }
+                        // }
                            
                     } else {
                         this.$router.replace({ name: '404'});
