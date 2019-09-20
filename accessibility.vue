@@ -19,7 +19,7 @@
         		    </div>
         		    
         		    <div class="site_container">
-        				<div class="pages_content about_content">
+        				<div class="pages_content acessibility_content">
         				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
             
                         </div>
