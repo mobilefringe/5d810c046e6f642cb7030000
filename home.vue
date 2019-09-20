@@ -410,7 +410,10 @@
                     this.isMobile = false;
                   }
                 },
-            }
+            },
+              beforeDestroy: function() {
+                window.removeEventListener("scroll", this.isScrolled);
+              }
         })
     })
 </script>
