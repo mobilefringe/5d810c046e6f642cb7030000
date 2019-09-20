@@ -44,7 +44,7 @@
             		    </div>
             		    <div class="margin_30">
                             <div class="map_search_container">
-                                <label class="accessibility" for="search">Search Here</label>
+                                <label style="visibility: hidden" for="search">Search Here</label>
                                 <search-component v-model="storeSearch" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" :placeholder="$t('stores_page.find_your_store')" id="search">
                                     <template slot="item" scope="option">
                                         <article class="media"><p>{{ option.data.name }}</p></article>
