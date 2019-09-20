@@ -412,7 +412,7 @@
                 },
             },
               beforeDestroy: function() {
-                window.removeEventListener("scroll", this.isScrolled);
+                window.removeEventListener("resize", this.isScrolled);
               }
         })
     })
