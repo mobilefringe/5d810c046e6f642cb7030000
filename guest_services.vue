@@ -180,7 +180,7 @@
                 return {
                     dataLoaded: true,
                     currentPage: null,
-                    pageBanner : null,
+                    pageBanner : null
                 }
             },
             created(){
