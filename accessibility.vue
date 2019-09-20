@@ -13,7 +13,7 @@
         			</div>
         		</div>	<!--page_header ends-->
         		
-        		<div>
+        		<section class="accessibility">
         		    <div>
         		        <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568827960000/wheelchair.png" alt="">
         		    </div>
@@ -24,7 +24,7 @@
             
                         </div>
                     </div><!--page content ends-->
-        		</div>
+        		</section>
         		
                 
                     
