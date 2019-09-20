@@ -403,11 +403,6 @@
                         this.storeSearch = ""
                     });
                     this.$refs.mapplic_ref.showLocation(option.svgmap_region);
-                },
-                
-                onOptionSelect(option) {
-                    this.search_result = "";
-                    this.$router.push("/stores/"+option.slug);
                 }
             }
         })
