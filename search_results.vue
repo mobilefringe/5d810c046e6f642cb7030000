@@ -207,6 +207,7 @@
                 if (this.$route.params.results == null && this.$route.params.results == undefined) {
                     this.$router.push("/");
                 }
+                this.dataLoaded = true;
             },
             computed: {
                 ...Vuex.mapGetters([
