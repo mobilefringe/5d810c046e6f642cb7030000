@@ -58,7 +58,7 @@
 <!--<script>-->
 <!--    define(["Vue", "vuex", "jquery"], function(Vue, Vuex, $) {-->
 <!--        return Vue.component("search-results", {-->
-            template: template, // the variable template will be injected
+
 <!--            data() {-->
 <!--                return {-->
 <!--                    searchResults: null,-->
@@ -193,7 +193,7 @@
                 return {
                     searchResults: null,
                     searchQuery: null,
-                    dataLoaded: true,
+                    dataLoaded: false,
                 }
             },
             beforeRouteUpdate(to, from, next) {
