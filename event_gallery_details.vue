@@ -223,7 +223,9 @@
                     'findRepoByName',
                     'processedGalleries',
                     'findGalleryById',
-                    'findGalleryBySlug'
+                    'findGalleryBySlug',
+                    
+                    'findEventBySlug'
                 ]),
                 banners () {
                     var banners = [];//this.$store.state.banners;
