@@ -222,8 +222,8 @@
                     'property',
                     'findRepoByName',
                     'processedGalleries',
-                    'findGalleryById',
-                    'findGalleryBySlug',
+                    // 'findGalleryById',
+                    // 'findGalleryBySlug',
                     
                     'findEventBySlug'
                 ]),
