@@ -108,7 +108,7 @@
                         this.pageBanner = { "image_url": "" }
                     }
                     
-                    this.updatecurrentGallery(this.id);
+                    this.updateCurrentGallery(this.id);
                     this.dataLoaded = true;
                 });
             },
