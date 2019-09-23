@@ -10,63 +10,82 @@
         				</div>
         			</div>
         		</div>
-            
         		<div class="site_container">
+        		    <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" > -->
+              <!--          <div v-masonry-tile >-->
 
-        		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > 
+              <!--              <div class="grid-item" v-if="galleries.length > 0" v-for="item in galleries" :key="item.id">-->
+              <!--                  <img :src="item.firstImageUrl" :alt="item.name" />-->
+                                        
+              <!--                  <h3>{{item.name}}</h3>-->
+                
+
+                                
+                                <!--set a link to the details per gallery-->
+              <!--                  <router-link :to="'/event_photos/'+ item.slug" class="more-promo-link">-->
+    							   <!--<div class="promo_learn_more animated_btn">View Gallery Here <span class="fa fa-caret-right"></span></div>-->
+    						    <!--</router-link>-->
+                                
+              <!--                  <social-sharing :url="$root.shareURL('events',item.slug)" :title="item.title" :description="item.body" :quote="_.truncate(item.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="item.image_url" inline-template >-->
+            		<!--				<div class="blog-social-share pull-right">-->
+            		<!--					<div class="social_share">-->
+            		<!--						<network network="facebook">-->
+            		<!--							<i class="fa fa-facebook social_icons" aria-hidden="true"></i>-->
+            		<!--						</network>-->
+            		<!--						<network network="twitter">-->
+            		<!--							<i class="fa fa-twitter social_icons" aria-hidden="true"></i>-->
+            		<!--						</network>-->
+            		<!--					</div>-->
+            		<!--				</div>-->
+            		<!--			</social-sharing>-->
+                    					
+                    		<!--</div>	-->
+              <!--          </div>-->
+              <!--      </div>-->
+              
+                    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
                         <div v-masonry-tile class="item">
-                           <!-- <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-                        	  <!--  <div v-if="feature.description" class="feature_item_container" >-->
-                        			<!--<img :src="feature.image_url" alt="">-->
-                        			<!--<div class="feature_item_info" >-->
-                        			<!--	<div class="feature_item_content">-->
-                        			<!--		<p v-if="feature.description">{{ feature.name }}</p>-->
-                        			<!--		<h3>{{ feature.name }}</h3>-->
-                        			<!--		<a class="feature_item_link" :href="feature.url">-->
-                        			<!--		    <div class="feature_item_more animated_btn" :aria-label="feature.name">{{feature.description}}</div>-->
-                        			<!--		</a>-->
-                        			<!--	</div>-->
-                        			<!--</div>-->
-                        	  <!--  </div>-->
-                        	  <!--  <div v-else-if="!feature.isSocial" class="feature_item_container">-->
-                        	  <!--      <a :href="feature.url">-->
-                           <!-- 			<img :src="feature.image_url" :alt="feature.name">-->
+                            <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
+                        	    <div v-if="feature.description" class="feature_item_container" >
+                        			<img :src="feature.image_url" alt="">
+                        			<div class="feature_item_info" >
+                        				<div class="feature_item_content">
+                        					<p v-if="feature.description">{{ feature.name }}</p>
+                        					<h3>{{ feature.name }}</h3>
+                        					<a class="feature_item_link" :href="feature.url">
+                        					    <div class="feature_item_more animated_btn" :aria-label="feature.name">{{feature.description}}</div>
+                        					</a>
+                        				</div>
+                        			</div>
+                        	    </div>
+                        	    <div v-else-if="!feature.isSocial" class="feature_item_container">
+                        	        <a :href="feature.url">
+                            			<img :src="feature.image_url" :alt="feature.name">
                             			
-                           <!-- 			<div class="feature_item_info">-->
+                            			<div class="feature_item_info">
                             			
-                           <!-- 			</div>-->
+                            			</div>
                             			
-                           <!-- 		</a>-->
-                        	  <!--  </div>-->
-                           <!-- </div>-->
+                            		</a>
+                        	    </div>
+                        	    <div v-else class="feature_item_container">
+                        	        
+                        			<img :src="feature.image_url" :alt="feature.name">
+                        			<div class="feature_item_info">
+                        			    <h3>Follow Us</h3>
+                        			    <div class="social_icons">
+                                            <span v-for="item in social_media">
+                                                <a :href="item.url" target="_blank">
+                                                    <p class="accessibility">{{ item.name }}</p>
+                                                    <i :class="item.iconClass" aria-hidden="true"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                        			</div>
+                        	    </div>
+                            </div>
                         </div>
                     </div>
-                    <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
-                    <!--    <div v-masonry-tile class="item">-->
-                    <!--        <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-                    <!--    	    <div v-if="feature.name && feature.description" class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info" >-->
-                    <!--        				<div class="feature_item_content">-->
-                    <!--        					<p>{{ feature.name }}</p>-->
-                    <!--        					<h3>{{ feature.description }}</h3>-->
-                    <!--        					<div class="feature_item_more" :aria-label="feature.name">View Details</div>-->
-                    <!--        				</div>-->
-                    <!--        			</div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--    	    <div v-else class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info"></div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-
-
         		</div>
         		
         		
