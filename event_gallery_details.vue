@@ -90,6 +90,7 @@
             data: function() {
                 return {
                     dataLoaded: false,
+                    currentGallery: null
 
                 }
             },
@@ -132,7 +133,7 @@
                     }
                 },
                 
-                updateCurrentGallery (id) {
+                updateCurrentGallery(id) {
                     this.currentGallery = this.findGalleryBySlug(id);
                     console.log(this.currentGallery)
                     if (this.currentGallery != null || this.currentGallery != undefined){
