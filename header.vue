@@ -1,9 +1,7 @@
 <template>
     <header id="header" :class="{ 'nav-up': navUp }">
 		<div class="site_container">
-		    <!--<div class="google_translate_container visible_phone">-->
-      <!--          <div id="google_translate_element_m"></div>-->
-      <!--      </div>-->
+
             
 			<div class="header_logo">
 				<div class="hidden_phone">
@@ -45,11 +43,6 @@
         			</div>
 				</div>
 				<div class="hidden_phone">
-				    <!--<div id="desktopHeader">-->
-        <!--                <div id="g_translater" class="text-center">-->
-        <!--                    <div id="google_translate_element"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
 				    <div class="header_search_container">
 					    <search-component v-if="headerReady" :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left">
                             <template slot="item" scope="option" class="manual">
