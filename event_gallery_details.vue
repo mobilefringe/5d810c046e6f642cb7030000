@@ -386,20 +386,15 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
-                       
-                updateCurrentJob (id) {
-                    this.currentJob = this.findJobBySlug(id);
-                    if (this.currentJob != null || this.currentJob != undefined){
-                        //customize json
-                    } else {
-                        this.$router.replace({ name: '404'});
-                    }
-                },
-
-                
-                
-                
+                }
+                // updateCurrentJob (id) {
+                //     this.currentJob = this.findJobBySlug(id);
+                //     if (this.currentJob != null || this.currentJob != undefined){
+                //         //customize json
+                //     } else {
+                //         this.$router.replace({ name: '404'});
+                //     }
+                // },
             }
         })
     })
