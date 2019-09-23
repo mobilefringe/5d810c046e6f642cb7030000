@@ -106,7 +106,7 @@
                         this.pageBanner = { "image_url": "" }
                     }
                     
-                    this.updatecurrentEvent(this.id);
+                    this.updatecurrentGallery(this.id);
                     this.dataLoaded = true;
                 });
             },
