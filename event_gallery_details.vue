@@ -3,51 +3,11 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-        		<div class="banner_div">
-        			<div class="home_banner_container">
-        				<slick ref="slick" :options="slickOptions">
-        					<div class="" v-for="banner in banners" v-if="banners">
-        						<div class="home_banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
-        						    <div class="home_banner_content" v-if="banner.name && banner.description">
-        						        <h1>{{ banner.name }}</h1>
-        						        <h2>{{ banner.description }}</h2>
-        						    </div>   
-        						</div>
-        					</div>
-        				</slick>
-        			</div>
-        		</div>
         		<div class="site_container">
-        		    <div class="visible_phone">
-        		        <div class="hours_container home_hours margin_top_30">
-                            <h5 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{ property.name }} is open today:</h5>
-        		            <h5 class="center caps" v-else>{{ property.name }} is</h5>
-                            <h3 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</h3>
-                            <h3 class="center caps" v-else>Closed</h3>
-                        </div>
-        		        <div class="home_page_title_container">
-            		        <h5 class="home_page_subtitle center caps">Explore</h5>
-        		            <h3 class="home_page_title caps">{{ property.name }}</h3>
-            		    </div>
-            		    <div class="margin_30">
-                            <div class="map_search_container">
-                                <search-component v-model="storeSearch" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" :placeholder="$t('stores_page.find_your_store')">
-                                    <template slot="item" scope="option">
-                                        <article class="media"><p>{{ option.data.name }}</p></article>
-                                    </template>
-                                </search-component>
-                                <i id="store_search_icon" class="fa fa-search" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <mapplic-map ref="mapplic_ref" :height="556" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
-        		    </div>
-        		    <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Explore</h5>
-        		        <h3 class="home_page_title caps">{{ property.name }}</h3>
-        		    </div>
-        		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
+
+        		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > 
                         <div v-masonry-tile class="item">
-                            <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
+                           <!-- <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
                         	  <!--  <div v-if="feature.description" class="feature_item_container" >-->
                         			<!--<img :src="feature.image_url" alt="">-->
                         			<!--<div class="feature_item_info" >-->
@@ -60,36 +20,17 @@
                         			<!--	</div>-->
                         			<!--</div>-->
                         	  <!--  </div>-->
-                        	    <div v-else-if="!feature.isSocial" class="feature_item_container">
-                        	        <a :href="feature.url">
-                            			<img :src="feature.image_url" :alt="feature.name">
+                        	  <!--  <div v-else-if="!feature.isSocial" class="feature_item_container">-->
+                        	  <!--      <a :href="feature.url">-->
+                           <!-- 			<img :src="feature.image_url" :alt="feature.name">-->
                             			
-                            			<div class="feature_item_info">
+                           <!-- 			<div class="feature_item_info">-->
                             			
-                            			</div>
+                           <!-- 			</div>-->
                             			
-                            		</a>
-                        	    </div>
-                        	    <div v-else class="feature_item_container">
-                        	        
-                            			<img :src="feature.image_url" :alt="feature.name">
-                            			<div class="feature_item_info">
-                            			    <h3>Follow Us</h3>
-                            			    <div class="social_icons">
-                                                <span v-for="item in social_media">
-                                                    <a :href="item.url" target="_blank">
-                                                        <p class="accessibility">{{ item.name }}</p>
-                                                        <i :class="item.iconClass" aria-hidden="true"></i>
-                                                    </a>
-                                                </span>
-                                            </div>
-                            			    
-                            			</div>
-                            			
-                            			
-                            	
-                        	    </div>
-                            </div>
+                           <!-- 		</a>-->
+                        	  <!--  </div>-->
+                           <!-- </div>-->
                         </div>
                     </div>
                     <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
