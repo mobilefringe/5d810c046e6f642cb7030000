@@ -141,6 +141,7 @@
                 ]),
                 galleries() {
                     var allGalleries = this.processedGalleries;
+                    console.log(allGalleries)
                     // var event_name = null;
                     // var firstImageUrl = null;
                     // var _this = this;
