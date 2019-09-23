@@ -172,12 +172,12 @@
                 updateCurrentGallery(id) {
                     this.currentGallery = this.findGalleryBySlug(id);
                     console.log(this.currentGallery)
+                    
                     if (this.currentGallery != null || this.currentGallery != undefined){
                         //customize json
                     } else {
                         this.$router.replace({ name: '404'});
                     }
-                    console.log(currentGallery)
                 },
 
                 
