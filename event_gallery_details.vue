@@ -116,7 +116,7 @@
             },
             created () {
                 this.loadData().then(response => {
-                    console.log(response)
+                    console.log(response[1].data.fashions)
                     var temp_repo = this.findRepoByName('Events Banner');
                     if (temp_repo) {
                         try {
