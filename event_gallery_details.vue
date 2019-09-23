@@ -387,14 +387,9 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                
-                
-                
-                
-                          
+                       
                 updateCurrentJob (id) {
                     this.currentJob = this.findJobBySlug(id);
-                    console.log(this.currentJob)
                     if (this.currentJob != null || this.currentJob != undefined){
                         //customize json
                     } else {
