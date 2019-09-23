@@ -116,6 +116,7 @@
             },
             created () {
                 this.loadData().then(response => {
+                    console.log(response)
                     var temp_repo = this.findRepoByName('Events Banner');
                     if (temp_repo) {
                         try {
@@ -126,6 +127,9 @@
                     } else {
                         this.pageBanner = { "image_url": "" }
                     }
+                    
+                    
+                    // var GalleryImagesByEvent = 
                     
                     this.updateCurrentGallery(this.id);
                     this.dataLoaded = true;
@@ -175,6 +179,9 @@
                     
                     if (this.currentGallery != null || this.currentGallery != undefined){
                         //customize json
+                        var currentGalleryName = this.currentGallery.name;
+                        
+                        
                     } else {
                         this.$router.replace({ name: '404'});
                     }
