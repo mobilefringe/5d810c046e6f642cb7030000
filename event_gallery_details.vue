@@ -20,7 +20,7 @@
 	</div>
 </template>
 
-// <script>
+<script>
 //     define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
 //         Vue.use(VueLazyload);
 //         return Vue.component("job-details-component", {
