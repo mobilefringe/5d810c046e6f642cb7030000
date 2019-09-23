@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div v-else class="col-sm-3 store_details_image center-block">
-                                <img class="result_logo" :src="property.default_logo_url"/>    
+                                <img class="result_logo" :src="property.default_logo_url" alt="" />    
                             </div>
                             <div class="col-sm-9 search_result_content">
                                 <h4 class="event_name caps">{{result.name}}</h4>
