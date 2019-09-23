@@ -181,8 +181,12 @@
                     if (this.currentGallery != null || this.currentGallery != undefined){
                         //customize json
                         var currentGalleryName = this.currentGallery.name;
-                        var imageUrl = this.currentGallery.fashion_images[i].photo_url;
-                        console.log(imageUrl)
+                        
+                        for (let i = 0, i < 10; i++) {
+                            var imageUrl = this.currentGallery.fashion_images[i].photo_url;
+                            console.log(imageUrl)
+                        }
+
                         
                     } else {
                         this.$router.replace({ name: '404'});
