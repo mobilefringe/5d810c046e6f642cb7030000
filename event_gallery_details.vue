@@ -177,6 +177,7 @@
                     } else {
                         this.$router.replace({ name: '404'});
                     }
+                    console.log(currentGallery)
                 },
 
                 
