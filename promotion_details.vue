@@ -118,19 +118,6 @@
                                 this.currentPromo.promo_image_url_abs = vm.property.default_logo_url;
                             }
                         }
-                        // if(_.includes(this.currentPromo.promo_image2_url_abs, 'missing')) {
-                        //     this.currentPromo.promo_image2_url_abs = ""
-                        // }
-                        
-                        // if (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                        //     if (value.promotionable_type == "Store") {
-                        //         this.currentPromo.promo_image_url_abs = value.store.image_url;
-                        //     } else {
-                        //         // value.image_url = value.store_front_url;
-                        //         value.image_url = vm.property.default_logo_url;
-                        //     }
-                        // }
-                           
                     } else {
                         this.$router.replace({ name: '404'});
                     }
