@@ -96,8 +96,6 @@
                     this.currentEvent = this.findEventBySlug(id);
                     
                     var property_name = this.property.name;
-                    console.log(property_name)
-                    console.log(this)
                     
                     var vm = this;
                     
