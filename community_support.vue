@@ -74,8 +74,6 @@
             data: function() {
                 return {
                     dataLoaded: false, 
-                    
-                    
                     pageBanner : null,
                     currentPage: null,
                     subPages: {},
@@ -101,14 +99,11 @@
                     } else {
                         this.pageBanner = { "image_url": "" }
                     }
-
-this.currentPage = response[0].data;
-                                if (response[0].data.subpages) {
-                                    this.subPages = response[0].data.subpages;
-                                }
-                    
+                    this.currentPage = response[0].data;
+                    if (response[0].data.subpages) {
+                        this.subPages = response[0].data.subpages;
+                    }
                     this.dataLoaded = true;
-                    // this.updatePageData(this.id);
                 });
 
 
@@ -129,41 +124,6 @@ this.currentPage = response[0].data;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
-                updatePageData (id) {
-                    this.$nextTick(function() {
-                        this.loadData(id).then(response => {
-                            if (response == null || response == undefined) {
-                                this.$router.replace('/');
-                            } else {
-                                this.currentPage = response[0].data;
-                                if (response[0].data.subpages) {
-                                    this.subPages = response[0].data.subpages;
-                                }
-                                
-                                // //Add custom banners for indivial pages 
-                                // var temp_repo = null;
-                                // if ( _.includes(id, 'community-programs')) {
-                                //     temp_repo = this.findRepoByName('Community Programs Banner');
-                                // } else if ( _.includes(id, 'gift-cards')) {
-                                //     temp_repo = this.findRepoByName('Gift Card Banner');
-                                // } else if ( _.includes(id, 'guest-services')) {
-                                //     temp_repo = this.findRepoByName('Guest Services Banner');
-                                // } else if ( _.includes(id, 'sevenoaks-leasing')) {
-                                //     temp_repo = this.findRepoByName('Leasing Banner');
-                                // } else {
-                                //     temp_repo = this.findRepoByName('Pages Banner');
-                                // }
-                                
-                                // if (temp_repo && temp_repo.images) {
-                                //     this.pageBanner = temp_repo.images[0];
-                                // } else {
-                                //     this.pageBanner = {};
-                                //     this.pageBanner.image_url = "";
-                                // }
-                            }
-                        });    
-                    });
                 }
             }
         });
