@@ -141,17 +141,17 @@
                 ]),
                 galleries() {
                     var allGalleries = this.processedGalleries;
-                    var event_name = null;
-                    var firstImageUrl = null;
-                    var _this = this;
-                    _.forEach(allGalleries, function(value, key) {
-                        if (value.fashion_images.length > 0) {
-                            value.firstImageUrl = _this.property.mm_host + value.fashion_images[0].photo_url
-                            if(value.name != null && value.name != undefined) {
-                                // value.event_name = value.event.name;
-                            }
-                         }
-                    });
+                    // var event_name = null;
+                    // var firstImageUrl = null;
+                    // var _this = this;
+                    // _.forEach(allGalleries, function(value, key) {
+                    //     if (value.fashion_images.length > 0) {
+                    //         value.firstImageUrl = _this.property.mm_host + value.fashion_images[0].photo_url
+                    //         if(value.name != null && value.name != undefined) {
+                    //             // value.event_name = value.event.name;
+                    //         }
+                    //      }
+                    // });
                     return allGalleries
                 }
             },
