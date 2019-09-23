@@ -336,16 +336,13 @@
         		    if (!this.showMenu) {
     				    this.mobileScroll = window.pageYOffset > 0;
         				var _this = this;
-        				// setTimeout(function() {
         					if (_this.mobileScroll) {
         						_this.mobileHasScrolled();
         						_this.mobileScroll = false;
         					}
-        				// }, 150);
         		    }
         		},
     			mobileHasScrolled () {
-    				// var lastScrollTop = 0;
     				var delta = 5;
     				var navbarHeight = document.getElementById("header").offsetHeight;
     				var st = $(window).scrollTop();
