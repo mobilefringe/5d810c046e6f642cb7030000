@@ -90,6 +90,7 @@
             data: function() {
                 return {
                     dataLoaded: false,
+                    pageBanner: null,
                     currentGallery: null
 
                 }
