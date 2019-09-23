@@ -12,10 +12,6 @@
         				</div>
         			</div>
         		</div>
-		
-		
-		
-		
         		<div class="site_container inside_page_content page_content">
         			<div class="row">
         			    <div class="col-md-12">
