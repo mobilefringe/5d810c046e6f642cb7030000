@@ -117,6 +117,7 @@
             created () {
                 this.loadData().then(response => {
                     console.log(response[1].data.fashions)
+                    
                     var temp_repo = this.findRepoByName('Events Banner');
                     if (temp_repo) {
                         try {
@@ -180,6 +181,7 @@
                     if (this.currentGallery != null || this.currentGallery != undefined){
                         //customize json
                         var currentGalleryName = this.currentGallery.name;
+                        var imageUrl = this.currentGallery.fashion_images[i].photo_url;
                         
                         
                     } else {
