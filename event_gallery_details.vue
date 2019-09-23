@@ -12,6 +12,7 @@
         		</div>
         		<div class="margin_60"></div>
                 <div v-if="dataLoaded" v-cloak class="site_container">
+                    <h1>hi</h1>
                     
             		
     		    </div>
