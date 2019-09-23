@@ -182,7 +182,7 @@
                         //customize json
                         var currentGalleryName = this.currentGallery.name;
                         var imageUrl = this.currentGallery.fashion_images[i].photo_url;
-                        
+                        console.log(imageUrl)
                         
                     } else {
                         this.$router.replace({ name: '404'});
