@@ -17,7 +17,7 @@
                         <div class="row result_container_row">
                             <div v-if="result.is_store" class="col-sm-3 store_details_image center-block">
                                 <div v-if="checkResultImage(result)">
-                                    <div class="no_logo">
+                                    <div class="no_logo_container">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png" alt="" >
                                         <p class="store_details_name">
                                             <span v-if="result.store_front_url_abs">{{result.name}}</span>
