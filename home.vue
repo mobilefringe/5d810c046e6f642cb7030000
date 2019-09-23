@@ -110,9 +110,8 @@
         		        <h3 class="home_page_title second caps">instagram</h3>
         		    </div>
         		    
-        		    <!--<div class="row">-->
+
         		    <div>
-        		        <!--<div class="row hidden-xs margin_60">-->
         		        <div class="hidden-xs margin_60">
                             <div class="">
                                 <div class="insta-feed-container">
