@@ -57,64 +57,8 @@
                     <!--        </div>-->
                     <!--    </div>-->
                     <!--</div>-->
-                    
-                    
-                    <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Follow us on</h5>
-        		        <h3 class="home_page_title second caps">instagram</h3>
-        		    </div>
-        		    
-        		    <!--<div class="row">-->
-        		    <div>
-        		    
-        		        <!--<div class="row hidden-xs margin_60">-->
-        		        <div class="hidden-xs margin_60">
-                            <div class="">
-                                <div class="insta-feed-container">
-                                    <div class="insta-feed-image " v-for="(item, index) in instaFeed">
-                                        <a :href="item.link" target="_blank">
-                                            <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>
-                                            <div class="insta_content">
-                                                <p class="insta_caption">{{ item.caption.text }}</p>
-                                                <p class="insta_user">@{{ item.user.username }}</p>
-                                                <i class="insta_icon fab fa-instagram"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="visible-xs margin_60 insta-feed-container">
-                            <div class="insta_prev"></div>
-                            <slick ref="slick" :options="instaOptions">
-                                <div class="insta-feed-image " v-for="(item, index) in instaFeed">
-                                    <a :href="item.link" target="_blank">
-                                        <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>
-                                        <div class="insta_content">
-                                            <p class="insta_caption">{{ item.caption.text }}</p>
-                                            <p class="insta_user">@{{ item.user.username }}</p>
-                                            <i class="insta_icon fab fa-instagram"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </slick>
-                            <div class="insta_next"></div>
-                        </div>
-                        
-        		        <!--<div v-for="feature in programs" class="col-sm-6">-->
-        		        <!--    <div class="feature_item_container programs" :class="feature.program_class">-->
-                  <!--  			<div class="feature_item_info">-->
-                  <!--  				<div class="feature_item_content">-->
-                  <!--  					<p>{{ feature.name }}</p>-->
-                  <!--  					<h3>{{ feature.description }}</h3>-->
-                  <!--  					<a :href="feature.url" :aria-label="feature.name">-->
-                  <!--      					<div class="feature_item_more animated_btn">View Details</div>-->
-                  <!--      				</a>-->
-                  <!--  				</div>-->
-                  <!--  			</div>-->
-                  <!--  	    </div>-->
-        		        <!--</div>-->
-        		    </div>
+
+
         		</div>
         		
         		
