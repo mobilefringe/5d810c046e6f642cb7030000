@@ -12,20 +12,8 @@
         		</div>
         		<div class="site_container page_content">
         		    <div class="promo_container promo_details_container" v-if="currentPromo">
-					    <div class="promo_img" v-if="!currentPromo.no_store_logo" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
-					    
-					    <!--<div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>-->
-					    
-					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png)' }">
-    					        
-					        <p class="store_details_name no_logo_text">
-    
-                                <span>{{currentPromo.store.name }}</span>
-                            </p>
-					    </div>
-					    
-					    
-					    
+					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
+					    <div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>
 					    <div class="promo_content">
 					        <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
@@ -112,7 +100,11 @@
                 },
                 updateCurrentPromo (id) {
                     this.currentPromo = this.findPromoBySlug(id);
+                    console.log(this.currentPromo)
+                    
                     var vm = this;
+                    
+                    
                     if (this.currentPromo != null || this.currentPromo != undefined){
                         this.currentPromo.name_short = _.truncate(this.currentPromo.name, { 'length': 21, 'separator': ' ' });
                         this.currentPromo.name_short_2 = _.truncate(this.currentPromo.name_2, { 'length': 21, 'separator': ' ' });
@@ -120,13 +112,7 @@
                         // if missing uploaded image, display store logo
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                             if (this.currentPromo.promotionable_type === "Store") {
-                                if (_.includes(currentPromo.promo_image_url_abs, 'missing')) {
-                                    //no store logo = true
-                                    this.currentPromo.no_store_logo = true 
-                                }else {
-                                    this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
-                                    this.currentPromo.no_store_logo = false
-                                }
+                                 this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
                             }
                             else {
                                 this.currentPromo.promo_image_url_abs = vm.property.default_logo_url;
