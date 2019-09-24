@@ -64,7 +64,7 @@
 						        <span v-if="item.sub_menu != undefined">{{$t(item.name)}}</span>
 						        <ul v-if="item.sub_menu">
 						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-						                <router-link tabindex=0  :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
+						                <router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
 						            </li>
 								</ul>
 						    </li>
