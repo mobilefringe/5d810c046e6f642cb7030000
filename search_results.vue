@@ -19,7 +19,7 @@
                                 <div v-if="checkResultImage(result)">
                                     <div class="no_logo_container">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png" alt="" >
-                                        <p class="store_details_name">
+                                        <p class="store_details_name no_logo_text">
                                             <span v-if="result.store_front_url_abs">{{result.name}}</span>
                                             <span v-else>{{ result.store.name }}</span>
                                         </p>
