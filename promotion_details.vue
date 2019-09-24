@@ -12,20 +12,14 @@
         		</div>
         		<div class="site_container page_content">
         		    <div class="promo_container promo_details_container" v-if="currentPromo">
-					    <!--<div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>-->
-					    <!--<div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>-->
-					    
-					    
 					    <div class="promo_img" v-if="!currentPromo.no_store_logo" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
 					    <div class="promo_img no_logo_store_title" v-else v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png)' }">
 					        <p class="store_details_name no_logo_text">
         
                                 {{ currentPromo.store.name }}
                             </p>
-					        
 					    </div>
-					    
-					    
+  
 					    <div class="promo_content">
 					        <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
