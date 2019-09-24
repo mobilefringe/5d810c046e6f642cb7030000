@@ -36,7 +36,7 @@
 			    
 			    
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
-					<router-view tabindex=0 class="content" :locale="locale" :social_media="social_media"></router-view>
+					<router-view class="content" :locale="locale" :social_media="social_media"></router-view>
 				</transition>
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 				    <footer-component :footer_menu_items="footer_menu_items" :social_media="social_media" v-if="dataLoaded"></footer-component>
