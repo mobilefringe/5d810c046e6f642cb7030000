@@ -112,24 +112,11 @@
                 },
                 updateCurrentPromo (id) {
                     this.currentPromo = this.findPromoBySlug(id);
-                    console.log(this.currentPromo)
-                    
                     var vm = this;
-                    
                     
                     if (this.currentPromo != null || this.currentPromo != undefined){
                         this.currentPromo.name_short = _.truncate(this.currentPromo.name, { 'length': 21, 'separator': ' ' });
                         this.currentPromo.name_short_2 = _.truncate(this.currentPromo.name_2, { 'length': 21, 'separator': ' ' });
-            
-                        // // if missing uploaded image, display store logo
-                        // if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                        //     if (this.currentPromo.promotionable_type === "Store") {
-                        //          this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
-                        //     }
-                        //     else {
-                        //         this.currentPromo.promo_image_url_abs = vm.property.default_logo_url;
-                        //     }
-                        // }
                         
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                             if (this.currentPromo.promotionable_type === "Store") {
