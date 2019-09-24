@@ -108,7 +108,7 @@
             },
             watch : {
                 locale: function(val, oldVal) {
-                    console.log("locale", this.locale);
+                    // console.log("locale", this.locale);
                 }
             },
             computed: {
