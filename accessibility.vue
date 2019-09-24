@@ -24,12 +24,7 @@
                         </div>
                         
                     </div><!--page content ends-->
-                    
         		</section>
-        		
-
-
-    		
 			</div>	<!--data loaded ends-->
 		</transition>
     </div>
