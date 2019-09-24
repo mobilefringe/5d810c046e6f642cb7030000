@@ -20,7 +20,7 @@
 					    <div class="promo_img no_logo_store_title" v-else v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png)' }">
 					        <p class="store_details_name no_logo_text">
         
-                                <span>{{ currentPromo.store.name }}</span>
+                                {{ currentPromo.store.name }}
                             </p>
 					        
 					    </div>
