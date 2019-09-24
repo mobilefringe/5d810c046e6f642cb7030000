@@ -62,7 +62,6 @@
                     }
 
                     this.currentPage = response[0].data;
-                    console.log(this.currentPage)
                     
                     this.dataLoaded = true;
                 });
