@@ -20,8 +20,9 @@
         		    <div class="site_container">
         				<div class="pages_content acessibility_content">
         				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
+        				    <div class="padding-60"></div>
                         </div>
-                        <div class="padding-60"></div>
+                        
                     </div><!--page content ends-->
                     
         		</section>
