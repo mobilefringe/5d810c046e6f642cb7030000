@@ -23,6 +23,7 @@
             
                         </div>
                     </div><!--page content ends-->
+                    <div class="margin_60"></div>
         		</section>
         		
 
