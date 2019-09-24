@@ -23,7 +23,7 @@
             
                         </div>
                     </div><!--page content ends-->
-                    <div class="margin_60"></div>
+                    <div class="margin_60" class="vis-hid"><p>margin</p></div>
         		</section>
         		
 
