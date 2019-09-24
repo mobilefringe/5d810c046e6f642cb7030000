@@ -123,10 +123,10 @@
                             if (this.currentPromo.promotionable_type === "Store") {
                                 if (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                                     //no store logo = true
-                                    // this.currentPromo.no_store_logo = true 
+                                    this.currentPromo.no_store_logo = true 
                                 }else {
                                     this.currentPromo.promo_image_url_abs = this.currentPromo.store.store_front_url_abs
-                                    // this.currentPromo.no_store_logo = false
+                                    this.currentPromo.no_store_logo = false
                                 }
                             }
                             else {
