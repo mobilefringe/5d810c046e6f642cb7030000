@@ -12,14 +12,24 @@
         		</div>
         		<div class="site_container page_content">
         		    <div class="promo_container promo_details_container" v-if="currentPromo">
-					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
-					    <div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>
-					    <div class="promo_content">
-					        <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>
-					        <p class="promo_title" v-else>{{ property.name }}</p>
-					        <h3 class="center caps hidden_phone" v-if="locale=='en-ca'">{{ currentPromo.name_short }}</h3>
-							<h3 class="center caps hidden_phone" v-else>{{ currentPromo.name_short_2 }}</h3>
+					    <div class="promo_img" v-if="!currentPromo.no_store_logo" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
+					  <!--  <div class="promo_img" v-else v-lazy:background-image="currentPromo.promo_image2_url_abs"></div>-->
+					  <!--  <div class="promo_content">-->
+					  <!--      <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>-->
+					  <!--      <p class="promo_title" v-else>{{ property.name }}</p>-->
+					  <!--      <h3 class="center caps hidden_phone" v-if="locale=='en-ca'">{{ currentPromo.name_short }}</h3>-->
+							<!--<h3 class="center caps hidden_phone" v-else>{{ currentPromo.name_short_2 }}</h3>-->
+					  <!--  </div>-->
+					  
+					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png)' }">
+    					        
+					        <p class="store_details_name no_logo_text">
+    
+                                <span>{{ promo.store.name }}</span>
+                            </p>
 					    </div>
+					    
+					    
 					</div>
     				<div class="row">
     				    <div class="col-md-12">
