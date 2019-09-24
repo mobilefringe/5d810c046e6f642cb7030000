@@ -223,15 +223,7 @@
                     } else {
                         document.getElementById('popup_backdrop').style.display = "none";
                     }
-                },
-                
-                $route: function() {
-                    this.query = this.$route.query.section
-                    if(this.query == "gift_card"){
-                      this.scrollTo('gift-cards')
-                    }    
-                },
-                
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
