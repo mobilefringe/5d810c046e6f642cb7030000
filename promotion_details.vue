@@ -18,7 +18,10 @@
 					    
 					    <div class="promo_img" v-if="!currentPromo.no_store_logo" v-lazy:background-image="currentPromo.promo_image_url_abs"></div>
 					    <div class="promo_img" v-else v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png)' }">
-					        <h1>test</h1>
+					        <p class="store_details_name no_logo_text">
+        
+                                <span>{{ currentPromo.store.name }}</span>
+                            </p>
 					        
 					    </div>
 					    
