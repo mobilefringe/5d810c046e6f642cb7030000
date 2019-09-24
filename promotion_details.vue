@@ -121,7 +121,7 @@
                         
                         if(_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                             if (this.currentPromo.promotionable_type === "Store") {
-                                if (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
+                                if (_.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
                                     //no store logo = true
                                     this.currentPromo.no_store_logo = true 
                                 }else {
