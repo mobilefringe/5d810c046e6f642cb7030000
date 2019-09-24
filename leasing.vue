@@ -3,7 +3,6 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-
         		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         			<div class="site_container">
         				<div class="header_content caps">
@@ -11,10 +10,7 @@
         				</div>
         			</div>
         		</div>
-		
-		
-		
-		
+	
         		<div class="site_container inside_page_content page_content leasing-content">
         			<div class="row">
         			    <div class="col-md-12">
@@ -105,9 +101,7 @@ this.currentPage = response[0].data;
                                 if (response[0].data.subpages) {
                                     this.subPages = response[0].data.subpages;
                                 }
-                    
                     this.dataLoaded = true;
-                    // this.updatePageData(this.id);
                 });
 
 
