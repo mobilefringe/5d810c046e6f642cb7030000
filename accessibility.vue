@@ -18,9 +18,9 @@
         		    </div>
         		    
         		    <div class="site_container">
-        				<div class="pages_content acessibility_content">
+        				<div class="pages_content acessibility_content margin-85">
         				    <div class="page_body description_text text_left" v-if="currentPage" v-html="currentPage.body"></div>
-        				    <div class="padding_60"></div>
+        				    
                         </div>
                         
                     </div><!--page content ends-->
