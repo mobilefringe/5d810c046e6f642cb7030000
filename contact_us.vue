@@ -27,7 +27,7 @@
 					            <p>{{ $t("contact_page.phone1") }}: {{ property.contact_phone }}</p>
 					            <p>{{ $t("contact_page.phone2") }}: {{ property.contact_fax }}</p>
 					       </span>
-					        <div class="margin_40"></div>
+				
 					        <span v-if="property.contact_email">
 					            <h3>{{ $t("contact_page.email") }}:</h3>
 					            <p>{{ property.contact_email }}</p>
