@@ -60,7 +60,7 @@
                                 <div class="col-md-12 col-lg-4">
                                     <p class="bold caps">{{ hour.holiday_name }}</p>
                                 </div>
-                                <div class="col-sm-6 col-lg-3">
+                                <div class="col-sm-6 col-lg-4">
                                     <p>{{ hour.holiday_date | moment("MMM D, YYYY", timezone) }}</p>    
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
