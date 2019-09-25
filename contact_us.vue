@@ -40,7 +40,7 @@
 					            </div>
 					        </div>
 					        <form id="contact_form" class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <div class="col-sm-12 col-md-6">
                                         <div class="position_relative" :class="{'has-error': errors.has('name')}">
                                             <label class="label" for="name">Name</label>
