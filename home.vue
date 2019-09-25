@@ -112,7 +112,7 @@
         		    
 
         		    <div>
-        		        <div class="hidden-xs margin_60">
+        		        <div class="hidden-xs margin_85">
                             <div class="">
                                 <div class="insta-feed-container">
                                     <div class="insta-feed-image " v-for="(item, index) in instaFeed">
