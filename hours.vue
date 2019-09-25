@@ -53,12 +53,12 @@
                     </div>
                     <div v-if="holidayHours.length > 0" class="row margin_85">
                         <div class="col-sm-12">
-                            <h4 class="margin_30 bold">Holiday Hours</h4>
+                            <h4 class="margin_30 bold caps">Holiday Hours</h4>
                         </div>
                         <div v-for="hour in holidayHours" class="col-sm-6">
                             <div class="row holiday_hours">
                                 <div class="col-md-12 col-lg-4">
-                                    <p class="bold caps">{{ hour.holiday_name }}</p>
+                                    <p>{{ hour.holiday_name }}</p>
                                 </div>
                                 <div class="col-sm-6 col-lg-3">
                                     <p>{{ hour.holiday_date | moment("MMM D, YYYY", timezone) }}</p>    
