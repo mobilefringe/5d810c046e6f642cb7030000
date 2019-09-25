@@ -18,7 +18,7 @@
                             <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
         			    </div>
         			</div>
-        			<div class="row padding_tb_50" v-if="subPages.length > 0">
+        			<div class="row padding_tb_85" v-if="subPages.length > 0">
                         <div class="col-md-12">
                             <b-card v-for="(item, index) in subPages" :key="index" no-body class="mb-1">
                                 <b-card-header header-tag="header" class="p-1" role="tab">
