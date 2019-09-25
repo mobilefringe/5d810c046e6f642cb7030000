@@ -21,13 +21,13 @@
 					            <h3>{{ $t("contact_page.location") }}:</h3>
 					            <p>{{ property.address1 }} {{ property.city }}, {{property.province_state }} {{property.postal_code }}</p>
 					       </span>
-					        <div class="margin_40"></div>
+					        <div class="margin_20"></div>
 					        <span v-if="property.contact_phone || property.contact_fax">
 					            <h3>{{ $t("contact_page.phone_title") }}:</h3>
 					            <p>{{ $t("contact_page.phone1") }}: {{ property.contact_phone }}</p>
 					            <p>{{ $t("contact_page.phone2") }}: {{ property.contact_fax }}</p>
 					       </span>
-					        <div class="margin_20"></div>
+					        <div class="margin_40"></div>
 					        <span v-if="property.contact_email">
 					            <h3>{{ $t("contact_page.email") }}:</h3>
 					            <p>{{ property.contact_email }}</p>
