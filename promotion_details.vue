@@ -39,6 +39,7 @@
             				    <div v-if="locale=='en-ca'" v-html="currentPromo.rich_description"></div>
 				                <div v-else v-html="currentPromo.rich_description_2"></div>
             				</div>
+            				<div class="padding_60"></div>
             			</div>	
             		</div>	
     			
