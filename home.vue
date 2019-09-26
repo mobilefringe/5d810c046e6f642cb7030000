@@ -59,7 +59,7 @@
         		    <!--mobile view: static image of map that is clickable to go to /maps-->
         		    
         		    <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Explore</h5>
+        		        <h4 class="home_page_subtitle center caps">Explore</h4>
         		        <h3 class="home_page_title caps">{{ property.name }}</h3>
         		    </div>
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
@@ -109,7 +109,7 @@
                     
                     
                     <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Follow us on</h5>
+        		        <h4 class="home_page_subtitle center caps">Follow us on</h4>
         		        <h3 class="home_page_title second caps">instagram</h3>
         		    </div>
         		    
