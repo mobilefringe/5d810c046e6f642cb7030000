@@ -124,7 +124,7 @@
                                             <div class="insta_content">
                                                 <p class="insta_caption">{{ item.caption.text }}</p>
                                                 <p class="insta_user">@{{ item.user.username }}</p>
-                                                <i class="insta_icon fab fa-instagram"></i>
+                                                <i class="insta_icon fa fa-instagram"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -141,8 +141,6 @@
                                             <p class="insta_caption">{{ item.caption.text }}</p>
                                             <p class="insta_user">@{{ item.user.username }}</p>
                                             <i class="insta_icon fa fa-instagram instagram"></i>
-                                            
-                                            <!--fa fa-instagram instagram-->
                                         </div>
                                     </a>
                                 </div>
