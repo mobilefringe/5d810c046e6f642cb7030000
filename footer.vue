@@ -16,7 +16,7 @@
     		        
 		        </div> <!--footer_logo_container ends-->
 		        
-		        <div class="property_logo">
+		        <div class="property_logo safe-award">
     			        <a href="https://www.morguard.com/news-knowledge/news-article?newsId=122898" target="_blank">
     			            <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1569527356000/safest-employer-award.png" alt="2018 Canada's Safest Employers Silver Winner recipient."/>
     			        </a>
