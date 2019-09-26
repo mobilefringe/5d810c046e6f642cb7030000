@@ -97,18 +97,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'findRepoByName'
-                ]),
-                // pageBanner() {
-                //     var pageBanner = null;
-                //     var temp_repo = this.findRepoByName('Pages Banner');
-                //     if (temp_repo && temp_repo.images) {
-                //         pageBanner = temp_repo.images[0];
-                //     } else {
-                //         pageBanner = {};
-                //         pageBanner.image_url = "";
-                //     }
-                //     return pageBanner;
-                // }
+                ])
             },
             methods: {
                 loadData: async function() {
