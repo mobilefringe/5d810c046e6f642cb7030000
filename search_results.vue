@@ -58,6 +58,7 @@
             template: template, // the variable template will be injected
             data() {
                 return {
+                    pageBanner: null,
                     searchResults: null,
                     searchQuery: null,
                     dataLoaded: false,
