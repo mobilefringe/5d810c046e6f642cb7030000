@@ -55,6 +55,9 @@
               <!--          </div>-->
               <!--          <mapplic-map ref="mapplic_ref" :height="556" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>-->
         		    <!--</div>-->
+        		    
+        		    <!--mobile view: static image of map that is clickable to go to /maps-->
+        		    
         		    <div class="home_page_title_container">
         		        <h5 class="home_page_subtitle center caps">Explore</h5>
         		        <h3 class="home_page_title caps">{{ property.name }}</h3>
