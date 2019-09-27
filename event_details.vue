@@ -32,21 +32,19 @@
         				        </p>
             				    <div v-if="locale=='en-ca'" v-html="currentEvent.rich_description"></div>
 				                <div v-else v-html="currentEvent.rich_description_2"></div>
-				                            				        
-            				        
-            				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
-                						<div class="blog-social-share pull-right">
-                							<div class="social_share">
-                							    <p>Share:</p>
-                								<network network="facebook">
-                									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
-                								</network>
-                								<network network="twitter">
-                									<i class="fa fa-twitter social_icons" aria-hidden="true"></i>
-                								</network>
-                							</div>
-                						</div>
-                					</social-sharing>
+        				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
+            						<div class="blog-social-share pull-right">
+            							<div class="social_share">
+            							    <p class="bold">Share:</p>
+            								<network network="facebook">
+            									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
+            								</network>
+            								<network network="twitter">
+            									<i class="fa fa-twitter social_icons" aria-hidden="true"></i>
+            								</network>
+            							</div>
+            						</div>
+            					</social-sharing>
             				</div>
             			</div>	
             		</div>	
