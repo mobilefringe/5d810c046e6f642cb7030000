@@ -20,7 +20,7 @@
                             </p>
 					    </div>
   
-					    <div class="promo_content">
+					    <div class="promo_content hidden_phone">
 					        <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
 					        <h3 class="center caps hidden_phone" v-if="locale=='en-ca'">{{ currentPromo.name_short }}</h3>
