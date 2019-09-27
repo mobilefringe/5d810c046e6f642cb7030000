@@ -69,8 +69,6 @@
             data: function() {
                 return {
                     dataLoaded: false, 
-                    
-                    
                     pageBanner : null,
                     currentPage: null,
                     subPages: {},
@@ -83,8 +81,6 @@
                 this.updatePageData(to.params.id);
             },
             created(){
-            
-               
                this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Leasing Banner');
                     if (temp_repo) {
@@ -97,14 +93,13 @@
                         this.pageBanner = { "image_url": "" }
                     }
 
-this.currentPage = response[0].data;
-                                if (response[0].data.subpages) {
-                                    this.subPages = response[0].data.subpages;
-                                }
+                    this.currentPage = response[0].data;
+                    if (response[0].data.subpages) {
+                        this.subPages = response[0].data.subpages;
+                    }
+                    
                     this.dataLoaded = true;
                 });
-
-
             },
             computed: {
                 ...Vuex.mapGetters([
