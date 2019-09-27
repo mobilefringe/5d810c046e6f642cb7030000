@@ -23,6 +23,7 @@
     		            
     		    </div>
 		        
+		         <hr class="visible_phone">
 		        
 		        <div class="center-block">
 		            <nav id="footer_nav">
