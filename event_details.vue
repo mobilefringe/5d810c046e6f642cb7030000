@@ -34,7 +34,7 @@
 				                <div v-else v-html="currentEvent.rich_description_2"></div>
         				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
             						<div class="blog-social-share">
-            							<div class="social_share">
+            							<div class="event_details_social_share">
             							    <p class="bold">Share:</p>
             								<network network="facebook">
             									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
