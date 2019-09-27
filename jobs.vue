@@ -28,7 +28,7 @@
     					        <p class="job_position">{{ checkJobType(promo) }}</p>
     							<p class="job_date">{{ $t("jobs_page.end_date") }}: {{promo.end_date | moment("MMMM DD, YYYY", timezone)}}</p>
     							<router-link :to="'/jobs/'+ promo.slug" >
-    							   <div class=".promo_load_more job_learn_more animated_btn">{{ $t("jobs_page.read_more") }}</div>
+    							   <div class="promo_load_more  animated_btn">{{ $t("jobs_page.read_more") }}</div>
     						    </router-link>   
     				        </div>
     		            </div>
