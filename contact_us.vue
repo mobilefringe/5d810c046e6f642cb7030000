@@ -65,7 +65,7 @@
                                             <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                                         </div>
                                         <div class="pull-right">
-                                            <button class="promo_learn_more animated_btn" type="submit" :disabled="formSuccess">
+                                            <button class="submit_btn animated_btn promo_learn_more" type="submit" :disabled="formSuccess">
                                                 {{ $t("contact_page.form_send") }}
                                             </button>
                                         </div>
