@@ -14,7 +14,7 @@
         		    <div class="promo_container promo_details_container" v-if="currentEvent">
 					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentEvent.image_url"></div>
 					    <div class="promo_img" v-else v-lazy:background-image="currentEvent.promo_image2_url_abs"></div>
-					    <div class="promo_content">
+					    <div class="promo_content hidden_phone">
 					        <p class="promo_title" v-if="currentEvent.store">{{ currentEvent.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
 					        <h3 class="hidden_phone center caps" v-if="locale=='en-ca'">{{ currentEvent.name_short }}</h3>
