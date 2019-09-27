@@ -30,8 +30,9 @@
             				        <span v-if="isMultiDay(currentEvent)">{{ currentEvent.start_date | moment("MMM D", timezone)}} - {{ currentEvent.end_date | moment("MMM D", timezone)}}</span>
             				        <span v-else>{{ currentEvent.start_date | moment("MMM D", timezone)}}</span>
         				        </p>
-            				    <div v-if="locale=='en-ca'" v-html="currentEvent.rich_description">
-            				        
+            				    <div v-if="locale=='en-ca'" v-html="currentEvent.rich_description"></div>
+				                <div v-else v-html="currentEvent.rich_description_2"></div>
+				                            				        
             				        
             				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
                 						<div class="blog-social-share pull-right">
@@ -46,8 +47,6 @@
                 							</div>
                 						</div>
                 					</social-sharing>
-            				    </div>
-				                <div v-else v-html="currentEvent.rich_description_2"></div>
             				</div>
             			</div>	
             		</div>	
