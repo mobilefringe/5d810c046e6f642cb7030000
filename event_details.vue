@@ -32,7 +32,7 @@
         				        </p>
             				    <div v-if="locale=='en-ca'" v-html="currentEvent.rich_description"></div>
 				                <div v-else v-html="currentEvent.rich_description_2"></div>
-        				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
+        				        <social-sharing :url="$root.shareURL('event_details',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
             						<div class="blog-social-share">
             							<div class="event_details_social_share">
             							    <p class="bold">Share Event:</p>
