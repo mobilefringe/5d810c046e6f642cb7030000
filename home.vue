@@ -87,7 +87,7 @@
                             			
                             		</a>
                         	    </div>
-                        	    <div v-else class="feature_item_container">
+                        	    <div v-else class="feature_item_container feat_social">
                         	        
                         			<img :src="feature.image_url" :alt="feature.name">
                         			<div class="feature_item_info">
