@@ -39,6 +39,19 @@
             				    <div v-if="locale=='en-ca'" v-html="currentPromo.rich_description"></div>
 				                <div v-else v-html="currentPromo.rich_description_2"></div>
             				</div>
+            				        				        <social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
+            						<div class="blog-social-share">
+            							<div class="event_details_social_share">
+            							    <p class="bold">Share:</p>
+            								<network network="facebook">
+            									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
+            								</network>
+            								<network network="twitter">
+            									<i class="fa fa-twitter social_icons" aria-hidden="true"></i>
+            								</network>
+            							</div>
+            						</div>
+            					</social-sharing>
             				<div class="padding_60"></div>
             			</div>	
             		</div>	
