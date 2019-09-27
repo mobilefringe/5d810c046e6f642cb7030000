@@ -24,6 +24,7 @@
     				<div class="row">
     				    <div class="col-md-12">
             				<div class="details_store_desc">
+            				    <h4>{{ property.name }}</h4>
             				    <h4 class="details_store_title" v-if="locale=='en-ca'">{{ currentEvent.name }}</h4>
 							    <h4 class="details_store_title" v-else>{{ currentEvent.name_2 }}</h4>
             				    <p class="bold">
