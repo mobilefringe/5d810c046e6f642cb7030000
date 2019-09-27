@@ -55,7 +55,7 @@
                         <div class="col-sm-12">
                             <h4 class="margin_30 bold caps">Holiday Hours</h4>
                         </div>
-                        <div v-for="hour in holidayHours" class="col-md-6 col-lg-3">
+                        <div v-for="hour in holidayHours" class="col-sm-6">
                             <div class="row holiday_hours">
                                 <div class="col-md-12 col-lg-4">
                                     <p>{{ hour.holiday_name }}</p>
