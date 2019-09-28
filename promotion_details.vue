@@ -52,8 +52,6 @@
             						</div>
             					</social-sharing>
             				</div>
-            				 
-            				<div class="padding_60"></div>
             			</div>	
             		</div>	
             		<div class="margin_85"></div>
