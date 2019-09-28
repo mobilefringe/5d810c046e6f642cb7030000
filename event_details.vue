@@ -10,7 +10,7 @@
         				</div>
         			</div>
         		</div>
-        		<div class="site_container page_content">
+        		<div class="site_container page_content event_details_content">
         		    <div class="promo_container promo_details_container" v-if="currentEvent">
 					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="currentEvent.image_url"></div>
 					    <div class="promo_img" v-else v-lazy:background-image="currentEvent.promo_image2_url_abs"></div>
