@@ -137,7 +137,7 @@
                                     <a :href="item.link" target="_blank">
                                         <!--<div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>-->                              
                                         <div class="insta-img">
-                                            <img src={{ item.images.standard_resolution.url }}>
+                                            <img src= "{{ item.images.standard_resolution.url }}">
                                         </div>
                                         <div class="insta_content">
                                             <p class="insta_caption">{{ item.caption.text }}</p>
