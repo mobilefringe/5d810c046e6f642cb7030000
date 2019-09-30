@@ -31,30 +31,6 @@
         			</div>
         		</div>
         		<div class="site_container">
-        		    <!--<div class="visible_phone">-->
-        		    <!--    <div class="hours_container home_hours margin_top_30">-->
-              <!--              <h5 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{ property.name }} is open today:</h5>-->
-        		    <!--        <h5 class="center caps" v-else>{{ property.name }} is</h5>-->
-              <!--              <h3 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</h3>-->
-              <!--              <h3 class="center caps" v-else>Closed</h3>-->
-              <!--          </div>-->
-        		    <!--    <div class="home_page_title_container">-->
-            		<!--        <h5 class="home_page_subtitle center caps">Explore</h5>-->
-        		    <!--        <h3 class="home_page_title caps">{{ property.name }}</h3>-->
-            		<!--    </div>-->
-            		<!--    <div class="margin_30">-->
-              <!--              <div class="map_search_container" v-if="isMobile">-->
-                                
-              <!--                  <search-component v-model="storeSearch" :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" :placeholder="$t('stores_page.find_your_store')">-->
-              <!--                      <template slot="item" scope="option">-->
-              <!--                          <article class="media"><p>{{ option.data.name }}</p></article>-->
-              <!--                      </template>-->
-              <!--                  </search-component>-->
-              <!--                  <i id="store_search_icon" class="fa fa-search" aria-hidden="true"></i>-->
-              <!--              </div>-->
-              <!--          </div>-->
-              <!--          <mapplic-map ref="mapplic_ref" :height="556" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>-->
-        		    <!--</div>-->
         		    
         		    <!--mobile view: static image of map that is clickable to go to /maps-->
         		    
@@ -119,7 +95,7 @@
                                 <div class="insta-feed-container">
                                     <div class="insta-feed-image " v-for="(item, index) in instaFeed">
                                         <a :href="item.link" target="_blank">
-                                            <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>
+                                            <div class="insta-img" v-bind:style="{ 'background-image': '#000 url(' + item.images.standard_resolution.url + ')' }"></div>
                                             <div class="insta_content">
                                                 <p class="insta_caption">{{ item.caption.text }}</p>
                                                 <p class="insta_user">@{{ item.user.username }}</p>
