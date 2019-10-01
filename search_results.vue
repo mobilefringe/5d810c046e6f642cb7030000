@@ -20,8 +20,8 @@
                     
         			<!--<div >-->
                         <div class="row result_container_row" v-for="(result,index) in searchResults" :key="index">
-                            <div v-if="result.is_store" class="col-sm-3 store_details_image center-block">
-                                <div v-if="checkResultImage(result)">
+                            <div v-if="result.is_store" class="col-sm-3">
+                                <div class="store_details_image center-block" v-if="checkResultImage(result)">
                                     <div class="no_logo_container">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png" alt="" >
                                         <p class="store_details_name no_logo_text">
@@ -30,7 +30,7 @@
                                         </p>
                                     </div>    
                                 </div> 
-                                <div v-else>
+                                <div class="store_details_image center-block" v-else>
                                     <img v-if="result.store" class="result_logo" :src="result.store.store_front_url_abs" alt="" />
                                     <img v-else-if="result.store_front_url_abs" class="result_logo" :src="result.store_front_url_abs" alt="" />
                                 </div>
