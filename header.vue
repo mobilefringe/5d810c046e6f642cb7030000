@@ -14,7 +14,7 @@
                         </span>
                     </div>
                     <div class="header_hours">
-                        <a v-if="todaysHours && !todaysHours.is_closed">Open Today: {{ todaysHours.open_time | moment("h:mma", timezone) }} - {{ todaysHours.close_time | moment("h:mma", timezone) }}</a>
+                        <router-link to="/hours" v-if="todaysHours && !todaysHours.is_closed">Open Today: {{ todaysHours.open_time | moment("h:mma", timezone) }} - {{ todaysHours.close_time | moment("h:mma", timezone) }}</router-link>
                         <p v-else>Closed</p>
                     </div>
 				</div>
