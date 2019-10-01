@@ -12,16 +12,11 @@
     		</div>
             <div class="site_container margin_30">
         		<div class="text-left" v-if="searchResults && searchResults.length > 0" id="searchResults">
-        		    <div class="row">
-        	            <div class="col-md-12">
-        	                <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
-        	            </div>
-        		    </div>
-                    
-        			<!--<div >-->
-                        <div class="row result_container_row" v-for="(result,index) in searchResults" :key="index">
-                            <div v-if="result.is_store" class="col-sm-3">
-                                <div class="store_details_image center-block" v-if="checkResultImage(result)">
+                    <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
+        			<div v-for="(result,index) in searchResults" :key="index">
+                        <div class="row result_container_row">
+                            <div v-if="result.is_store" class="col-sm-3 store_details_image center-block">
+                                <div v-if="checkResultImage(result)">
                                     <div class="no_logo_container">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png" alt="" >
                                         <p class="store_details_name no_logo_text">
@@ -30,7 +25,7 @@
                                         </p>
                                     </div>    
                                 </div> 
-                                <div class="store_details_image center-block" v-else>
+                                <div v-else>
                                     <img v-if="result.store" class="result_logo" :src="result.store.store_front_url_abs" alt="" />
                                     <img v-else-if="result.store_front_url_abs" class="result_logo" :src="result.store_front_url_abs" alt="" />
                                 </div>
@@ -47,7 +42,7 @@
                                 <router-link v-else-if="result.jobable_id" class="result_link event_learn_more" :to="{ name: 'jobDetails', params: { id: result.slug }}">View Job Details</router-link>
                             </div>
                         </div>                
-                    <!--</div>-->
+                    </div>
         		</div>
                 <div class="page_container text-left col-md-12" v-else> 
                     <h4>Sorry, there are no results that match your search. Please try again.</h4>
