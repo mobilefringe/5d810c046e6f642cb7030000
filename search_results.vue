@@ -12,9 +12,14 @@
     		</div>
             <div class="site_container margin_30">
         		<div class="text-left" v-if="searchResults && searchResults.length > 0" id="searchResults">
-                    <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
-        			<div v-for="(result,index) in searchResults" :key="index">
-                        <div class="row result_container_row">
+        		    <div class="row">
+        	            <div class="col-md-12">
+        	                <p class="search_result_title">Found {{searchResults.length}} results matching "{{searchQuery}}"</p>
+        	            </div>
+        		    </div>
+                    
+        			<!--<div >-->
+                        <div class="row result_container_row" v-for="(result,index) in searchResults" :key="index">
                             <div v-if="result.is_store" class="col-sm-3 store_details_image center-block">
                                 <div v-if="checkResultImage(result)">
                                     <div class="no_logo_container">
@@ -42,7 +47,7 @@
                                 <router-link v-else-if="result.jobable_id" class="result_link event_learn_more" :to="{ name: 'jobDetails', params: { id: result.slug }}">View Job Details</router-link>
                             </div>
                         </div>                
-                    </div>
+                    <!--</div>-->
         		</div>
                 <div class="page_container text-left col-md-12" v-else> 
                     <h4>Sorry, there are no results that match your search. Please try again.</h4>
