@@ -21,7 +21,7 @@
 				<div class="mobile_header">
 				    <div class="property_logo center-block">
 						<router-link to="/">
-						    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743925000/Northgate-logo.png" :alt="property.name + ' Logo'"/>
+						    <img src="//codecloud.cdn.speedyrails.net/sites/5d810c046e6f642cb7030000/image/png/1568743936000/Northgate-footer-logo.png" :alt="property.name + ' Logo'"/>
 					    </router-link>
 					</div>
 			        <div id="menu-icon" @click="showMenu = !showMenu" :class="{ open: showMenu }" class="visible_phone hamburger">
