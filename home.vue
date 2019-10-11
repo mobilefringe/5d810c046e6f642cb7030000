@@ -225,6 +225,7 @@
                             } else {
                                 banners.push(value);
                             }
+                            console.log(banners)
                         }
                     })
                     return _.orderBy(banners, ['position'], ['asc']);
