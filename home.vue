@@ -9,7 +9,7 @@
         			    <!--if multiple home hero banners-->
         				<slick v-if="banners.length > 1" ref="slick" :options="slickOptions">
         					<div class="" v-for="banner in banners" v-if="banners">
-        					    <a v-if="banner.url" href="banner.url">
+        					    <a v-if="banner.url" href="{banner.url}">
         					        <div class="home_banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
             						    <div class="home_banner_content" v-if="banner.name && banner.description">
             						        <h1>{{ banner.name }}</h1>
@@ -29,7 +29,7 @@
         				
         				<!--if only 1 banner-->
     					<div class="" v-for="banner in banners" v-if="banners.length == 1">
-    					    <a v-if="banner.url" href="banner.url">
+    					    <a v-if="banner.url" href="{banner.url}">
     					        <div class="home_banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
         						    <div class="home_banner_content" v-if="banner.name && banner.description">
         						        <h1>{{ banner.name }}</h1>
