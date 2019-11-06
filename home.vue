@@ -148,7 +148,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
+    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, Meta, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
@@ -186,7 +186,13 @@
                         nextArrow: '.insta_next',
                         prevArrow: '.insta_prev'
                     },
-                    instaFeed: null
+                    instaFeed: null,
+                    meta: {
+                        meta_title: "",
+                        meta_description: "",
+                        meta_keywords: "",
+                        meta_image: ""
+                    }
                 }
             },
             created () {
@@ -202,6 +208,7 @@
                     });
 
                     this.dataLoaded = true;  
+                    this.meta = this.findMetaDataByPath(this.$route.path);
                 });
                 window.addEventListener("resize", this.getWindowWidth);
                   //Init
@@ -378,6 +385,18 @@
             
             beforeDestroy: function() {
                 window.removeEventListener("resize",  this.getWindowWidth);
+            },
+            metaInfo () {
+               return {
+                  title: this.meta.meta_title,
+                  meta: [
+                     { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                     { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                     { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                     { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                     { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                  ]
+               }
             }
         })
     })
