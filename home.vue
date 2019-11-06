@@ -382,10 +382,6 @@
                   }
                 },
             },
-            
-            beforeDestroy: function() {
-                window.removeEventListener("resize",  this.getWindowWidth);
-            },
             metaInfo () {
                return {
                   title: this.meta.meta_title,
@@ -398,6 +394,10 @@
                   ]
                }
             }
+            
+            beforeDestroy: function() {
+                window.removeEventListener("resize",  this.getWindowWidth);
+            },
         })
     })
 </script>
